@@ -1,2 +1,2 @@
-# hugobaeta.com
-WordPress Theme for my personal website on hugobaeta.com
+# Personal Website
+This is the repository for the WordPress Theme for my personal website that will live on hugobaeta.com
