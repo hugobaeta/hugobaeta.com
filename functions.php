@@ -41,6 +41,7 @@ function hugobaeta_setup() {
 	 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 	 */
 	add_theme_support( 'post-thumbnails' );
+	add_image_size( 'hugobaeta-post-featured', 1920, 9999, false ); // Large Post Image
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
