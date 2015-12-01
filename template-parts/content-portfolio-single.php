@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying single projects.
+ * Template part for displaying single portfolio projects.
  *
  * @package Hugo_Baeta
  */
@@ -10,7 +10,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<?php if ( '' != get_the_post_thumbnail() ) : ?>
-		<?php the_post_thumbnail( 'hugobaeta-post-thumbnail' ); ?>
+		<?php the_post_thumbnail( 'hugobaeta-project-image' ); ?>
 	<?php endif; ?>
 
 	<header class="entry-header">

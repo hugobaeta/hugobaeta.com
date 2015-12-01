@@ -87,6 +87,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/orbitalis-feature.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.25136e+06,
+		"inputAbbreviatedPath": "\/images\/orbitalis-feature.png",
+		"outputAbbreviatedPath": "\/images\/orbitalis-feature.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/thefivethemes-feature.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -94,6 +105,17 @@
 		"initialSize": 91125,
 		"inputAbbreviatedPath": "\/images\/thefivethemes-feature.png",
 		"outputAbbreviatedPath": "\/images\/thefivethemes-feature.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/wordpresscom-feature.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 67339,
+		"inputAbbreviatedPath": "\/images\/wordpresscom-feature.png",
+		"outputAbbreviatedPath": "\/images\/wordpresscom-feature.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -208,6 +230,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/page.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/portfolio-page.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/portfolio-page.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0

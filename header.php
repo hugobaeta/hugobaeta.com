@@ -18,6 +18,14 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 <?php wp_head(); ?>
+
+<?php if ( is_singular( 'jetpack-portfolio' ) ) {
+	if(get_field('portfolio-project-color')) {
+			echo '<style type="text/css">body {background: ' . get_field('portfolio-project-color') . ';}</style>';
+	};
+}?>
+
+
 </head>
 
 <body <?php body_class(); ?>>

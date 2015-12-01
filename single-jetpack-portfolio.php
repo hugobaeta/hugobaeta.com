@@ -1,6 +1,6 @@
 <?php
 /**
- * The Template for displaying single projects.
+ * The Template for displaying single portfolio projects.
  *
  * @package Hugo_Baeta
  */
