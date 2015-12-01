@@ -1,5 +1,9 @@
 p {
-	margin-bottom: 1.5em;
+	margin-bottom: ms(0);
+}
+
+strong {
+	font-weight: 600;
 }
 
 dfn, cite, em, i {
@@ -7,17 +11,28 @@ dfn, cite, em, i {
 }
 
 blockquote {
-	margin: 0 1.5em;
+	margin: 0 0 ms(0);
+	font-style: italic;
+	font-size: ms(2);
+	font-weight: 700;
+	line-height: ms(1);
+	color: $color__text-blockquote;
+	cite,
+	cite a {
+		font-weight: 400;
+		font-style: normal;
+		font-size: ms(0);
+		color: $color__text-blockquote-cite;
+	}
 }
 
 address {
-	margin: 0 0 1.5em;
+	margin: 0 0 ms(0);
 }
 
 pre {
 	background: $color__background-pre;
 	font-family: $font__pre;
-	@include font-size(0.9375);
 	line-height: $font__line-height-pre;
 	margin-bottom: 1.6em;
 	max-width: 100%;
@@ -27,7 +42,9 @@ pre {
 
 code, kbd, tt, var {
 	font-family: $font__code;
-	@include font-size(0.9375);
+	font-size: ms(-2);
+	background: $color__background-pre;
+	padding: ms(-6) ms(-2);
 }
 
 abbr, acronym {

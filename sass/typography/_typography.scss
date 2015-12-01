@@ -1,3 +1,18 @@
+html.wf-loading body,
+html.wf-loading h1,
+html.wf-loading h2,
+html.wf-loading h3,
+html.wf-loading h4,
+html.wf-loading h5,
+html.wf-loading h6,
+html.wf-loading button,
+html.wf-loading input,
+html.wf-loading select,
+html.wf-loading textarea,
+ {
+    opacity: 0;
+}
+
 body,
 button,
 input,
@@ -5,7 +20,7 @@ select,
 textarea {
 	color: $color__text-main;
 	font-family: $font__main;
-	@include font-size(1);
+	font-size: 26px;
 	line-height: $font__line-height-body;
 }
 

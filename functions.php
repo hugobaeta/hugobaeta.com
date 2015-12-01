@@ -70,12 +70,6 @@ function hugobaeta_setup() {
 		'quote',
 		'link',
 	) );
-
-	// Set up the WordPress core custom background feature.
-	add_theme_support( 'custom-background', apply_filters( 'hugobaeta_custom_background_args', array(
-		'default-color' => 'ffffff',
-		'default-image' => '',
-	) ) );
 }
 endif; // hugobaeta_setup
 add_action( 'after_setup_theme', 'hugobaeta_setup' );
@@ -88,7 +82,7 @@ add_action( 'after_setup_theme', 'hugobaeta_setup' );
  * @global int $content_width
  */
 function hugobaeta_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'hugobaeta_content_width', 640 );
+	$GLOBALS['content_width'] = apply_filters( 'hugobaeta_content_width', 820 );
 }
 add_action( 'after_setup_theme', 'hugobaeta_content_width', 0 );
 
@@ -125,6 +119,22 @@ function hugobaeta_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'hugobaeta_scripts' );
+
+
+/**
+ * Enqueue TypeKit Fonts
+ */
+function theme_typekit() {
+    wp_enqueue_script( 'theme_typekit', '//use.typekit.net/bjr0dyj.js');
+}
+add_action( 'wp_enqueue_scripts', 'theme_typekit' );
+
+function theme_typekit_inline() {
+  if ( wp_script_is( 'theme_typekit', 'done' ) ) { ?>
+  	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+<?php }
+}
+add_action( 'wp_head', 'theme_typekit_inline' );
 
 /**
  * Implement the Custom Header feature.

@@ -1,0 +1,26 @@
+.home {
+    background: $color__background-body url('images/hugobaeta-home-alt.jpg') no-repeat fixed center center;
+    background-size: cover;
+
+    .site-content {
+        position: absolute;
+        top: 70vh;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+
+        .home-content {
+            margin: 0 auto;
+            max-width: ms(17);
+            padding: 0 ms(2) ms(2);
+            p {
+                margin: 0;
+                &.small {
+                    margin-top: ms(-2);
+                    font-size: ms(-2);
+                    opacity: .8;
+                }
+            }
+        }
+    }
+}

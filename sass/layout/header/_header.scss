@@ -1,0 +1,67 @@
+.site-header {
+    padding: ms(2) ms(0) ms(0);
+    text-align: center;
+
+    @include animation(fadein 1s ease-out 0s backwards); //Fade-in
+    @include transition(all 0.5s ease-in-out);
+
+    @include respondTo(atleast-wide) {
+        overflow: hidden;
+        padding: ms(0) ms(2) ms(-6);
+    }
+
+    @include respondTo(atleast-extra-wide) {
+        padding: ms(0) ms(4) ms(-6);
+    }
+}
+
+.site-branding {
+    margin: 0 auto ms(0);
+    padding-bottom: ms(1);
+    border-bottom: 2px solid $color__border-base; 
+
+    @include respondTo(atleast-wide) {
+        float: left;
+        border-bottom: none;
+        margin: 0;
+    }
+
+    .site-title {
+        display: block; 
+        font-size: ms(-2);
+        font-weight: 900;
+        letter-spacing: ms(-12);
+        margin: 0 auto ms(-2);
+
+        @include respondTo(atleast-wide) {
+            display: inline-block;
+            margin: 0;
+        }
+
+        a {
+            margin: 0;
+            color: $color__link-header;
+            text-decoration: none;
+            &:hover {
+                color: $color__link-header-hover;
+            }
+            @include respondTo(atleast-wide) {
+                padding: ms(2) 0;
+            }
+        }
+    }
+
+    .site-description {
+        @include text-format(heading-small);
+        margin: 0;
+        font-size: ms(-3);
+        font-weight: 700;
+        color: $color__text-header;
+
+        @include respondTo(atleast-wide) {
+            display: inline-block;
+            font-size: ms(-2);
+            margin-left: ms(-2);
+        }
+    }
+}

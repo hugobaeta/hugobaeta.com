@@ -1,6 +1,6 @@
 /*!
 Theme Name: Hugo Baeta
-Theme URI: http://underscores.me/
+Theme URI: http://hugobaeta.com
 Author: Hugo Baeta
 Author URI: http://hugobaeta.com
 Description: Theme for hugobaeta.com
@@ -28,23 +28,37 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Elements
 # Forms
 # Navigation
-	## Links
-	## Menus
+    ## Links
+    ## Menus
 # Accessibility
 # Alignments
 # Clearings
-# Widgets
 # Content
+    ## Header
+    ## Header Feature Image
     ## Posts and pages
-	## Asides
-	## Comments
+    ## Home
+    ## Archive
+    ## Sharing
+    ## Comments
+    ## Footer
+    ## 404
+# Sidebar
+    ## Widgets
 # Infinite scroll
 # Media
-	## Captions
-	## Galleries
+    ## Captions
+    ## Galleries
 --------------------------------------------------------------*/
+
+// Libraries
+@import "bourbon";
+@import "libs/modular-scale/modular-scale";
+
+//Globals
 @import "variables-site/variables-site";
 @import "mixins/mixins-master";
+@import "animations/animations";
 
 /*--------------------------------------------------------------
 # Normalize
@@ -87,14 +101,14 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "modules/clearings";
 
 /*--------------------------------------------------------------
-# Widgets
---------------------------------------------------------------*/
-@import "site/secondary/widgets";
-
-/*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
-@import "site/site";
+@import "layout/layout";
+
+/*--------------------------------------------------------------
+# Sidebar
+--------------------------------------------------------------*/
+@import "layout/secondary/secondary";
 
 /*--------------------------------------------------------------
 # Infinite scroll

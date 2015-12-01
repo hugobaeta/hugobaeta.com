@@ -2,10 +2,26 @@ html {
 	box-sizing: border-box;
 }
 
+html,
+body {
+	width: 100%;
+	overflow-x: hidden;
+}
+
 *,
 *:before,
 *:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
 	box-sizing: inherit;
+	//@include transition(all 0.2s ease-in-out);
+}
+
+::selection {/* WebKit/Blink Browsers */
+	background: rgba(#000,.2); 
+	color: #fff;
+}
+::-moz-selection { /* Gecko Browsers */
+	background: rgba(#000,.2); 
+	color: #fff;
 }
 
 body {
@@ -24,8 +40,8 @@ blockquote, q {
 hr {
 	background-color: $color__background-hr;
 	border: 0;
-	height: 1px;
-	margin-bottom: 1.5em;
+	height: 4px;
+	margin-bottom: ms(0);
 }
 
 @import "lists";

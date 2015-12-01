@@ -14,11 +14,10 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'hugobaeta' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'hugobaeta' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'hugobaeta' ), 'hugobaeta', '<a href="http://hugobaeta.com" rel="designer">Hugo Baeta</a>' ); ?>
-		</div><!-- .site-info -->
+		<ul class="site-info">
+            <li class="cms-info"><a href="<?php echo esc_url( __( 'http://wordpress.org/', 'magnus' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'magnus' ), 'WordPress' ); ?></a></li>
+            <li class="copyright-info">Content &copy; <a href="http://hugobaeta.com" rel="author">Hugo Baeta</a></li>            
+        </ul><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
