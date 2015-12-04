@@ -11,16 +11,20 @@
 
 	<a href="<?php the_permalink(); ?>">
 
-		<?php if ( '' != get_the_post_thumbnail() ) : ?>
-            <div class="project-image">
-                <?php the_post_thumbnail( 'hugobaeta-project-image' ); ?>
-            </div>
-		<?php endif; ?>
+        <?php 
+        $image_id = get_post_thumbnail_id();
+        $url = wp_get_attachment_image_src( $image_id, 'hugobaeta-project-image' ); 
+        ?>
 
-        <header class="entry-header">
-            <?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
-            <?php the_excerpt(); ?>
-        </header><!-- .entry-header -->
+        <header class="project-header" style="background-image: url(<?php echo esc_attr( $url[0] ); ?>);">
+            <div class="project-header-content">
+                <?php the_title( '<h1 class="project-title">', '</h1>' ); ?>
+
+                <?php if(get_field('portfolio-project-intro')) {
+                    echo '<div class="project-intro">' . get_field('portfolio-project-intro') . ';}</div>';
+                }?>
+            </div><!-- .project-header-content -->
+        </header><!-- .project-header -->
 	
     </a>
 

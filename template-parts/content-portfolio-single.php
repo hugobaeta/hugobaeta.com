@@ -9,13 +9,20 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<?php if ( '' != get_the_post_thumbnail() ) : ?>
-		<?php the_post_thumbnail( 'hugobaeta-project-image' ); ?>
-	<?php endif; ?>
+    <?php 
+    $image_id = get_post_thumbnail_id();
+    $url = wp_get_attachment_image_src( $image_id, 'hugobaeta-project-image' ); 
+    ?>
 
-	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-	</header><!-- .entry-header -->
+    <header class="project-header" style="background-image: url(<?php echo esc_attr( $url[0] ); ?>);">
+    	<div class="project-header-content">
+    		<?php the_title( '<h1 class="project-title">', '</h1>' ); ?>
+
+	        <?php if(get_field('portfolio-project-intro')) {
+	            echo '<div class="project-intro">' . get_field('portfolio-project-intro') . '</div>';
+	        }?>
+    	</div><!-- .project-header-content -->
+    </header><!-- .project-header -->
 
 	<div class="entry-content">
 		<?php the_content(); ?>

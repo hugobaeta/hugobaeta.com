@@ -1,11 +1,14 @@
 .site-header {
-    padding: ms(2) ms(0) ms(0);
+    width: 100vw;
+    position: absolute;
+    z-index: 100;
+    padding: ms(0);
     text-align: center;
 
     @include animation(fadein 1s ease-out 0s backwards); //Fade-in
     @include transition(all 0.5s ease-in-out);
 
-    @include respondTo(atleast-wide) {
+    @include respondTo(atleast-medium) {
         overflow: hidden;
         padding: ms(0) ms(2) ms(-6);
     }
@@ -16,14 +19,15 @@
 }
 
 .site-branding {
-    margin: 0 auto ms(0);
-    padding-bottom: ms(1);
+    margin: 0 auto ms(-6);
+    padding-bottom: ms(-6);
     border-bottom: 2px solid $color__border-base; 
 
-    @include respondTo(atleast-wide) {
+    @include respondTo(atleast-medium) {
         float: left;
         border-bottom: none;
         margin: 0;
+        text-align: left;
     }
 
     .site-title {
@@ -31,9 +35,13 @@
         font-size: ms(-2);
         font-weight: 900;
         letter-spacing: ms(-12);
-        margin: 0 auto ms(-2);
+        margin: 0 auto;
 
-        @include respondTo(atleast-wide) {
+        @include respondTo(atleast-narrow) {
+            
+        }
+
+        @include respondTo(atleast-medium) {
             display: inline-block;
             margin: 0;
         }
@@ -45,7 +53,7 @@
             &:hover {
                 color: $color__link-header-hover;
             }
-            @include respondTo(atleast-wide) {
+            @include respondTo(atleast-medium) {
                 padding: ms(2) 0;
             }
         }
@@ -56,11 +64,21 @@
         margin: 0;
         font-size: ms(-3);
         font-weight: 700;
+        line-height: 2;
         color: $color__text-header;
+
+        @include respondTo(upto-narrow) {
+            //display: none;
+            font-size: ms(-4);
+        }
+
+        @include respondTo(atleast-medium) {
+            // font-size: ms(-2);
+        }
 
         @include respondTo(atleast-wide) {
             display: inline-block;
-            font-size: ms(-2);
+            //font-size: ms(-2);
             margin-left: ms(-2);
         }
     }

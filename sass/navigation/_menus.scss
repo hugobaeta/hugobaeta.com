@@ -12,9 +12,6 @@
 
     @include respondTo(atleast-medium) {
         font-size: ms(-2);
-    }
-
-    @include respondTo(atleast-wide) {
         text-align: right;
     }
 
@@ -24,10 +21,18 @@
 
     ul, 
     ul li {
-        display: inline-block;
         list-style: none;
         margin: 0;
         padding: 0;
+    }
+
+    ul li {
+        display: inline-block;
+        @include respondTo(atleast-medium) {
+            &:last-child {
+                margin-right: -(ms(0));
+            }
+        }
     }
 
     a {
@@ -39,14 +44,7 @@
         &:hover {
             color: $color__link-header-hover;
         }
-    }
-
-    @include respondTo(atleast-wide) {
-        li:last-child a {
-            padding-right: 0;
-        }
-    }
-    
+    }    
 }
 
 .social-navigation {

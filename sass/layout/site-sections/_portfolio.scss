@@ -1,0 +1,78 @@
+// Portfolio shared styles
+.post-type-archive-jetpack-portfolio,
+.single-jetpack-portfolio {
+    .site-header {
+
+    }
+    .site-content {
+        margin: 0;
+        padding-top: 0;
+    }
+    .content-area {
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .hentry {
+        border: none;
+        margin: 0;
+        padding: 0;
+        a {
+            text-decoration: none;
+        }
+    }
+
+    .project-header {
+        position: relative;
+
+        padding: ms(2);
+        text-align: center;
+
+        background-position: center center;
+        //background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .project-header-content {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            padding: 0 ms(2);
+            @include transform(translateY(-50%));
+        }
+
+
+        h1, h2 {
+            margin: 0;
+        }
+        .project-intro {
+            max-width: ms(17);
+            margin: 0 auto; 
+        }
+    }
+}
+
+// Portfolio Archive
+.post-type-archive-jetpack-portfolio {
+    background-color: $color__background-body-portfolio;
+
+    .content-area {
+        overflow: hidden;
+    }
+
+    .project,
+    .project-header {
+       height: 100vh;
+    }
+}
+
+
+// Portfolio Singular
+.single-jetpack-portfolio {
+    .project-header {
+        width: 100%;
+        height: 60vh;
+    }
+}

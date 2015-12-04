@@ -3,23 +3,16 @@
 --------------------------------------------------------------*/
 @import "header/header";
 
-/*--------------------------------------------------------------
-## Header Feature Image
---------------------------------------------------------------*/
-@import "header/feature-image";
-
 .site {
     width: 100vw;
-    @include clearfix;
+    //@include clearfix;
 }
 
 .site-content {
     width: 100vw;
     margin-bottom: ms(4);
-    @include respondTo(atleast-narrow) {
-        width: 90vw;
-        margin: 0 auto;
-    }
+    padding-top: ms(10);
+
 }
 
 .content-area, 
@@ -27,14 +20,6 @@
     max-width: ms(17);
     padding: ms(2);
     margin: 0 auto ms(2);
-    
-    @include respondTo(atleast-wide) {
-        padding: ms(6);
-    }
-    @include respondTo(atleast-extra-wide) {
-        font-size: ms(1);
-        padding: ms(8);
-    }
 }
 
 .content-area {
@@ -52,9 +37,9 @@
 @import "primary/posts-and-pages";
 
 /*--------------------------------------------------------------
-## Home
+## Site Sections
 --------------------------------------------------------------*/
-@import "home/home";
+@import "site-sections/site-sections";
 
 /*--------------------------------------------------------------
 ## Archive

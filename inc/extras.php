@@ -24,6 +24,14 @@ function hugobaeta_body_classes( $classes ) {
 		$classes[] = 'hfeed';
 	}
 
+    //Singular Slug Body Class
+    if ( is_singular() ) {
+        global $post;
+        if ( isset( $post ) ) {
+            $classes[] = $post->post_type . '-' . $post->post_name;
+        }
+    }
+
 	return $classes;
 }
 add_filter( 'body_class', 'hugobaeta_body_classes' );

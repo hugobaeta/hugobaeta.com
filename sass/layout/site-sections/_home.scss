@@ -1,6 +1,19 @@
 .home {
-    background: $color__background-body url('images/hugobaeta-home-alt.jpg') no-repeat fixed center center;
-    background-size: cover;
+    background-color: $color__background-body-home;
+
+    &:after {
+        content: "";
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: -1;
+        background: url('images/hugobaeta-home-alt.jpg') no-repeat center center;
+        background-size: cover;
+    }
+    
 
     .site-content {
         position: absolute;
@@ -23,4 +36,9 @@
             }
         }
     }
+}
+
+
+.page-about {
+    background: $color__background-body-about;
 }

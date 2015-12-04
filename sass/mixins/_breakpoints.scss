@@ -1,13 +1,32 @@
-// Breakpoints for each query
+// Breakpoints variables
+
+// Width
+$ultra-narrow: 320px;
 $narrow: 480px;
-$medium: 800px;
-$wide: 1100px;
-$extra-wide: 1400px;
+$medium: 768px;
+$wide: 1024px;
+$extra-wide: 1200px;
 $ultra-wide: 1600px;
+
+// Height
+$short: 480px;
+$medium-height: 800px;
+$tall: 1100px;
+
+
 
 @mixin respondTo($media) {
 
-  @if $media == upto-narrow {
+  // Width Queries
+
+  @if $media == upto-ultra-narrow {
+    @media (max-width: $ultra-narrow) { @content; }
+  }
+  @else if $media == atleast-ultra-narrow {
+    @media (min-width: $ultra-narrow) { @content; }
+  }
+
+  @elseif $media == upto-narrow {
     @media (max-width: $narrow) { @content; }
   }
   @else if $media == atleast-narrow {
@@ -34,5 +53,28 @@ $ultra-wide: 1600px;
 
   @else if $media == atleast-ultra-wide {
     @media (min-width: $ultra-wide) { @content; }
+  }
+
+  // Height Queries
+
+  @else if $media == upto-short {
+    @media (max-width: $short) { @content; }
+  }
+  @else if $media == atleast-short {
+    @media (min-width: $short) { @content; }
+  }
+
+  @else if $media == upto-medium-height {
+    @media (max-width: $medium-height) { @content; }
+  }
+  @else if $media == atleast-medium-height {
+    @media (min-width: $medium-height) { @content; }
+  }
+
+  @else if $media == upto-tall {
+    @media (max-width: $tall) { @content; }
+  }
+  @else if $media == atleast-tall {
+    @media (min-width: $tall) { @content; }
   }
 }
