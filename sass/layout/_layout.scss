@@ -11,8 +11,10 @@
 .site-content {
     width: 100vw;
     margin-bottom: ms(4);
-    padding-top: ms(8);
-
+    padding-top: ms(10);
+    @include respondTo(atleast-medium) {
+        padding-top: ms(8);
+    }
 }
 
 .content-area, 

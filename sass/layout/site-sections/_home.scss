@@ -22,16 +22,29 @@
         padding: 0;
         width: 100%;
 
+        @include respondTo(upto-narrow) {
+            top: auto;
+            bottom: 0;
+        }
+
         .home-content {
             margin: 0 auto;
-            max-width: ms(17);
+            max-width: ms(16);
             padding: 0 ms(2) ms(2);
+
+            @include respondTo(atleast-wide) {
+                max-width: ms(17);
+            }
+
             p {
                 margin: 0;
                 &.small {
                     margin-top: ms(-2);
                     font-size: ms(-2);
                     opacity: .8;
+                    @include respondTo(upto-narrow) {
+                        font-size: ms(-1);
+                    }
                 }
             }
         }

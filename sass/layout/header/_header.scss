@@ -6,7 +6,10 @@
     text-align: center;
 
     @include animation(fadein 1s ease-out 0s backwards); //Fade-in
-    @include transition(all 0.5s ease-in-out);
+
+    @include respondTo(upto-narrow) {
+        font-size: ms(2);
+    }
 
     @include respondTo(atleast-medium) {
         overflow: hidden;

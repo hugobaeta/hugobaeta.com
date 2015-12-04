@@ -73,6 +73,9 @@
 .single-jetpack-portfolio {
     .project-header {
         width: 100%;
-        height: 60vh;
+        height: 100vh;
+        @include respondTo(atleast-wide) {
+            height: 70vh
+        }
     }
 }
