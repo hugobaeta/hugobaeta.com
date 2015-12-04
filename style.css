@@ -762,9 +762,6 @@ a {
 .social-navigation {
   display: none; }
 
-.posts-navigation a:hover {
-  background: #f5f7fa; }
-
 .comment-navigation .nav-previous a, .comment-navigation .nav-next a,
 .posts-navigation .nav-previous a,
 .posts-navigation .nav-next a,
@@ -1219,16 +1216,24 @@ blockquote.alignright {
     margin: 0; }
   .post-type-archive-jetpack-portfolio .project-header .project-intro,
   .single-jetpack-portfolio .project-header .project-intro {
-    max-width: 31.062234375em;
+    font-size: 0.808em;
+    font-style: italic;
+    max-width: 38.443359375em;
     margin: 0 auto; }
+    @media (min-width: 768px) {
+      .post-type-archive-jetpack-portfolio .project-header .project-intro,
+      .single-jetpack-portfolio .project-header .project-intro {
+        font-size: 0.6666666667em; } }
 
 .post-type-archive-jetpack-portfolio {
   background-color: #605288; }
   .post-type-archive-jetpack-portfolio .content-area {
     overflow: hidden; }
-  .post-type-archive-jetpack-portfolio .project,
+  .post-type-archive-jetpack-portfolio .project {
+    height: 95vh; }
   .post-type-archive-jetpack-portfolio .project-header {
-    height: 100vh; }
+    width: 100%;
+    height: 100%; }
 
 .single-jetpack-portfolio .project-header {
   width: 100%;
@@ -1236,6 +1241,14 @@ blockquote.alignright {
   @media (min-width: 1024px) {
     .single-jetpack-portfolio .project-header {
       height: 70vh; } }
+.single-jetpack-portfolio .entry-content {
+  margin: 0;
+  padding: 1.5em 1em;
+  background: rgba(0, 0, 0, 0.15);
+  color: rgba(255, 255, 255, 0.75); }
+  .single-jetpack-portfolio .entry-content .wrap {
+    max-width: 38.443359375em;
+    margin: 0 auto; }
 
 /*--------------------------------------------------------------
 ## Archive
@@ -1529,65 +1542,25 @@ blockquote.alignright {
 ## 404
 --------------------------------------------------------------*/
 .error404 {
-  background: #BE0082; }
-  .error404 .site-main {
-    position: relative;
+  background: #D2DC64; }
+  .error404:after {
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
     height: 100vh;
-    margin: 0;
-    padding: 5.0625em 0 0; }
-  .error404 .not-found {
-    position: absolute;
-    top: 45%;
-    -webkit-transform: translateY(-45%);
-    -moz-transform: translateY(-45%);
-    -ms-transform: translateY(-45%);
-    -o-transform: translateY(-45%);
-    transform: translateY(-45%);
-    width: 100vw; }
-    .error404 .not-found .page-header,
-    .error404 .not-found .page-content {
-      padding: 0 1em;
-      margin: 0 auto;
-      max-width: 38.443359375em;
-      color: white; }
-  .error404 article {
-    position: relative;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    border-bottom: 0;
-    background: #fff;
-    overflow: hidden; }
-    .error404 article:nth-child(even) {
-      background: rgba(255, 255, 255, 0.95); }
-    .error404 article .section-inner {
-      position: absolute;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-      -moz-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      -o-transform: translateY(-50%);
-      transform: translateY(-50%);
-      width: 100vw; }
-    .error404 article .entry-header {
-      padding: 0 1em;
-      margin: 0 auto;
-      max-width: 38.443359375em; }
-      @media (min-width: 1200px) {
-        .error404 article .entry-header {
-          font-size: 1.212em; }
-          .error404 article .entry-header.sidebar-toggled {
-            font-size: 1em; } }
-      .error404 article .entry-header .entry-title {
-        margin-top: 0;
-        margin-bottom: 0.2962962963em; }
-        .error404 article .entry-header .entry-title a {
-          text-decoration: none;
-          color: white; }
-          .error404 article .entry-header .entry-title a:hover {
-            color: white; }
-  .error404.header-image .site-header-image {
-    display: none; }
+    z-index: -1;
+    background: url("images/hugobaeta-about.png") no-repeat center center;
+    background-size: cover;
+    opacity: .3; }
+  .error404 .not-found .page-header,
+  .error404 .not-found .page-content {
+    padding: 0 1em;
+    margin: 0 auto;
+    max-width: 38.443359375em;
+    color: white; }
 
 .error404 .site-content,
 .search-no-results .site-content {

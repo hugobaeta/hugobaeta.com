@@ -57,20 +57,13 @@ $color__background-body: $color__purple;
 $color__background-body-home: $color__magenta;
 $color__background-body-portfolio: $color__purple;
 $color__background-body-about: $color__brown;
+$color__background-404: $color__yellow;
 $color__background-screen: #fff;
 $color__background-hr: rgba(#fff,.25);
 $color__background-pre: $color__base-tint95;
 $color__background-ins: $color__base-tint95;
-
-$color__background-header: $color__fill;
-$color__background-primary: #fff;
-$color__background-secondary: $color__base-tint95;
-$color__background-footer: $color__base-tint40;
-$color__background-404: $color__accent;
-$color__background-archive-header: $color__base-tint90;
-$color__background-homeblock-hover: $color__accent;
-$color__background-feature: #fff;
 $color__background-table-header: rgba($color__base,.05);
+$color__background-portfolio-description: rgba(#000,.15);
 
 
 // Text
@@ -86,15 +79,16 @@ $color__headings: rgba(#fff,.6);
 $color__text-soft: $color__base-tint60;
 $color__text-softer: $color__base-tint80;
 
+
+
 $color__text-blockquote: rgba(#fff,.8);
 $color__text-blockquote-cite: rgba(#fff,.6);
 
 $color__text-header: rgba(#fff,.4);
-
 $color__text-secondary: rgba($color__base,.5);
-
 $color__text-footer: rgba(#fff,.4);
 
+$color__text-portfolio-description: rgba(#fff,.75);
 
 // Links
 

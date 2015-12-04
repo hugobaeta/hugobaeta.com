@@ -17,15 +17,18 @@
     <header class="project-header" style="background-image: url(<?php echo esc_attr( $url[0] ); ?>);">
     	<div class="project-header-content">
     		<?php the_title( '<h1 class="project-title">', '</h1>' ); ?>
-
-	        <?php if(get_field('portfolio-project-intro')) {
-	            echo '<div class="project-intro">' . get_field('portfolio-project-intro') . '</div>';
-	        }?>
     	</div><!-- .project-header-content -->
     </header><!-- .project-header -->
 
 	<div class="entry-content">
-		<?php the_content(); ?>
+        <div class="wrap">
+            <div class="entry-description">
+                <?php the_content(); ?>
+            </div><!-- .entry-description -->
+            <?php if(get_field('portfolio-project-url')) {
+                echo '<div class="project-url"><a class="button" href="' . get_field('portfolio-project-url') . '" title="Visit Website">Visit Website</a></div>';
+            }?>
+        </div>
 	</div><!-- .entry-content -->
 
 </article><!-- #post-## -->

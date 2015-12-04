@@ -77,4 +77,10 @@ $tall: 1100px;
   @else if $media == atleast-tall {
     @media (min-width: $tall) { @content; }
   }
+
+  // Width & Height Queries
+
+  @else if $media == atleast-wide-medium-height {
+    @media (min-width: $wide) and (min-height: $medium-height) { @content; }
+  }
 }

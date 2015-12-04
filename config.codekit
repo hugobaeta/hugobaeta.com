@@ -109,13 +109,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/orbitalis-feature.png": {
-		"fileType": 32768,
+	"\/images\/orbitalis-feature.jpg": {
+		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 1.25136e+06,
-		"inputAbbreviatedPath": "\/images\/orbitalis-feature.png",
-		"outputAbbreviatedPath": "\/images\/orbitalis-feature.png",
+		"initialSize": 460067,
+		"inputAbbreviatedPath": "\/images\/orbitalis-feature.jpg",
+		"outputAbbreviatedPath": "\/images\/orbitalis-feature.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -135,7 +135,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 67339,
+		"initialSize": 27402,
 		"inputAbbreviatedPath": "\/images\/wordpresscom-feature.png",
 		"outputAbbreviatedPath": "\/images\/wordpresscom-feature.png",
 		"outputPathIsOutsideProject": 0,

@@ -1,18 +1,25 @@
 .error404 {
     background: $color__background-404;
 
-    .site-main {
-        position: relative;
+    &:after {
+        content: "";
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
         height: 100vh;
-        margin: 0;
-        padding: ms(8) 0 0;
+        z-index: -1;
+        background: url('images/hugobaeta-about.png') no-repeat center center;
+        background-size: cover;
+        opacity: .3;
     }
 
+
     .not-found {
-        position: absolute;
-        top: 45%;
-        @include transform(translateY(-45%));
-        width: 100vw;
+        // position: absolute;
+        // top: 45%;
+        // @include transform(translateY(-45%));
 
         .page-header,
         .page-content {
@@ -24,57 +31,7 @@
         }
     }
 
-    article {
-        position: relative;
-        height: 100vh;
-        margin: 0;
-        padding: 0;
-        border-bottom: 0;
-        background: $color__background-feature;
-
-        overflow: hidden;
-
-        &:nth-child(even) {
-            background: rgba($color__background-feature,.95);
-        }
-
-        .section-inner {
-            position: absolute;
-            top: 50%;
-            @include transform(translateY(-50%));
-            width: 100vw;
-        }
-
-        .entry-header {
-            padding: 0 ms(0);
-            margin: 0 auto;
-            max-width: ms(18);
-            
-            @include respondTo(atleast-extra-wide) {
-                font-size: ms(1);
-                &.sidebar-toggled {
-                    font-size: ms(0);
-                }
-            }
-
-            .entry-title {
-                margin-top: 0;
-                margin-bottom: ms(-6);
-                a {
-                    text-decoration: none;
-                    color: white;
-                    &:hover {
-                        color: white;
-                    }
-                }
-            }
-
-        }
-    }
-
-    &.header-image .site-header-image {
-        display: none;
-    }
+    
 }
 
 .error404,
