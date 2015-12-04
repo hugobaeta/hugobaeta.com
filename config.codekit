@@ -65,6 +65,28 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/images\/hugobaeta-about-avatar.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 302579,
+		"inputAbbreviatedPath": "\/images\/hugobaeta-about-avatar.png",
+		"outputAbbreviatedPath": "\/images\/hugobaeta-about-avatar.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/hugobaeta-about.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 91297,
+		"inputAbbreviatedPath": "\/images\/hugobaeta-about.png",
+		"outputAbbreviatedPath": "\/images\/hugobaeta-about.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/hugobaeta-home-alt.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -102,7 +124,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 91125,
+		"initialSize": 83923,
 		"inputAbbreviatedPath": "\/images\/thefivethemes-feature.png",
 		"outputAbbreviatedPath": "\/images\/thefivethemes-feature.png",
 		"outputPathIsOutsideProject": 0,

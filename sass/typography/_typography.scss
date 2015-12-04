@@ -22,6 +22,9 @@ textarea {
 	font-family: $font__main;
 	font-size: 26px;
 	line-height: $font__line-height-body;
+    @include respondTo(atleast-ultra-wide) {
+        font-size: 39px;
+    }
 }
 
 @import "headings";

@@ -1,5 +1,54 @@
 .page-about {
+    background-color: $color__background-body-about;
+
+    &:after {
+        content: "";
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: -1;
+        background: url('images/hugobaeta-about.png') no-repeat center center;
+        background-size: cover;
+        opacity: .5;
+    }
+
+
     .entry-header {
-        display: none;
+        position: relative;
+        width: 200px;
+        max-width: 100%;
+        background: url('images/hugobaeta-about-avatar.png') no-repeat center center;
+        background-size: cover;
+        border-radius: 50%;
+        margin: -(ms(1)) auto ms(2);
+
+        &:before {
+            display: block;
+            content: "";
+            width: 100%;
+            padding-top: 100%;
+        }
+
+        @include respondTo(atleast-medium) {
+            width: 300px;
+            margin-bottom: ms(4);
+        }
+
+        @include respondTo(atleast-extra-wide) {
+            width: 400px;
+            margin-top: -(ms(4));
+            margin-bottom: ms(4);
+        }
+
+        @include respondTo(atleast-ultra-wide) {
+            width: 500px;
+        }
+
+        h1{
+            display: none;
+        }
     }
 }

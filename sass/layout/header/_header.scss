@@ -10,11 +10,11 @@
 
     @include respondTo(atleast-medium) {
         overflow: hidden;
-        padding: ms(0) ms(2) ms(-6);
+        padding: ms(0) ms(1);
     }
 
     @include respondTo(atleast-extra-wide) {
-        padding: ms(0) ms(4) ms(-6);
+        padding: ms(0) ms(2);
     }
 }
 
