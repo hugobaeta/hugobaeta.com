@@ -340,7 +340,20 @@ textarea {
   color: rgba(255, 255, 255, 0.8);
   font-family: "ff-tisa-web-pro", Georgia, serif;
   font-size: 26px;
-  line-height: 1.5; }
+  line-height: 1.5;
+  text-rendering: optimizelegibility;
+  -moz-font-feature-settings: "kern" 1;
+  -moz-font-feature-settings: "kern=1";
+  -ms-font-feature-settings: "kern" 1;
+  -o-font-feature-settings: "kern" 1;
+  -webkit-font-feature-settings: "kern" 1;
+  font-feature-settings: "kern" 1;
+  -moz-font-feature-settings: "liga" 1;
+  -moz-font-feature-settings: "liga=1";
+  -ms-font-feature-settings: "liga" 1;
+  -o-font-feature-settings: "liga" 1;
+  -webkit-font-feature-settings: "liga" 1;
+  font-feature-settings: "liga" 1; }
   @media (max-width: 480px) {
     body,
     button,
@@ -440,7 +453,7 @@ address {
   margin: 0 0 1em; }
 
 pre {
-  background: #f5f7fa;
+  background: rgba(255, 255, 255, 0.15);
   font-family: "Courier 10 Pitch", Courier, monospace;
   line-height: 1.818em;
   margin-bottom: 1.6em;
@@ -451,7 +464,7 @@ pre {
 code, kbd, tt, var {
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
   font-size: 0.6666666667em;
-  background: #f5f7fa;
+  background: rgba(255, 255, 255, 0.15);
   padding: 0.2962962963em 0.6666666667em; }
 
 abbr, acronym {
@@ -459,7 +472,7 @@ abbr, acronym {
   cursor: help; }
 
 mark, ins {
-  background: #f5f7fa;
+  background: rgba(255, 255, 255, 0.15);
   text-decoration: none; }
 
 big {
@@ -502,7 +515,7 @@ blockquote, q {
     content: ""; }
 
 hr {
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.15);
   border: 0;
   height: 4px;
   margin-bottom: 1em; }
@@ -538,7 +551,7 @@ table {
   width: 100%; }
   table tr th {
     text-align: left;
-    background: rgba(50, 90, 160, 0.05);
+    background: rgba(0, 0, 0, 0.05);
     padding: 0.1975308642em 0.4444444444em; }
   table tr td {
     border-bottom: 1px solid rgba(50, 90, 160, 0.03);
@@ -641,7 +654,7 @@ textarea {
   width: 100%; }
 
 .post-password-form {
-  background: #f5f7fa;
+  background: rgba(255, 255, 255, 0.15);
   padding: 3.375em 2.25em; }
   .post-password-form p {
     max-width: 300px;
@@ -677,9 +690,9 @@ textarea {
 --------------------------------------------------------------*/
 a {
   color: rgba(255, 255, 255, 0.8);
-  -webkit-transition-property: color, text-decoration, opacity;
-  -moz-transition-property: color, text-decoration, opacity;
-  transition-property: color, text-decoration, opacity;
+  -webkit-transition-property: color, text-decoration, opacity, background;
+  -moz-transition-property: color, text-decoration, opacity, background;
+  transition-property: color, text-decoration, opacity, background;
   -webkit-transition-duration: 0.5s;
   -moz-transition-duration: 0.5s;
   transition-duration: 0.5s;
@@ -690,9 +703,9 @@ a {
     color: rgba(255, 255, 255, 0.8); }
   a:hover, a:focus, a:active {
     color: #fff;
-    -webkit-transition-property: color, text-decoration, opacity;
-    -moz-transition-property: color, text-decoration, opacity;
-    transition-property: color, text-decoration, opacity;
+    -webkit-transition-property: color, text-decoration, opacity, background;
+    -moz-transition-property: color, text-decoration, opacity, background;
+    transition-property: color, text-decoration, opacity, background;
     -webkit-transition-duration: 0.05s;
     -moz-transition-duration: 0.05s;
     transition-duration: 0.05s;
@@ -703,6 +716,13 @@ a {
     outline: thin dotted; }
   a:hover, a:active {
     outline: 0; }
+  a.button {
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.2);
+    color: rgba(255, 255, 255, 0.8); }
+    a.button:hover {
+      background: rgba(0, 0, 0, 0.1);
+      color: #fff; }
 
 /*--------------------------------------------------------------
 ## Sidebar Toggle Button
@@ -735,7 +755,7 @@ a {
   text-transform: uppercase;
   font-size: 0.5386666667em; }
   @media (min-width: 768px) {
-    .main-navigation {
+    .site-header .main-navigation {
       font-size: 0.6666666667em;
       text-align: right; } }
   .main-navigation h2 {
@@ -748,7 +768,7 @@ a {
   .main-navigation ul li {
     display: inline-block; }
     @media (min-width: 768px) {
-      .main-navigation ul li:last-child {
+      .site-header .main-navigation ul li:last-child {
         margin-right: -1em; } }
   .main-navigation a {
     display: block;
@@ -899,9 +919,9 @@ blockquote.alignright {
   z-index: 100;
   padding: 1em;
   text-align: center;
-  -webkit-animation: fadein 1s ease-out 0s backwards;
-  -moz-animation: fadein 1s ease-out 0s backwards;
-  animation: fadein 1s ease-out 0s backwards; }
+  -webkit-animation: fadein 0.5s ease-out 1s backwards;
+  -moz-animation: fadein 0.5s ease-out 1s backwards;
+  animation: fadein 0.5s ease-out 1s backwards; }
   @media (max-width: 480px) {
     .site-header {
       font-size: 1.5em; } }
@@ -972,6 +992,12 @@ blockquote.alignright {
   @media (min-width: 768px) {
     .site-content {
       padding-top: 5.0625em; } }
+
+.site-content,
+.site-footer {
+  -webkit-animation: fadein 0.5s ease-out 0.5s backwards;
+  -moz-animation: fadein 0.5s ease-out 0.5s backwards;
+  animation: fadein 0.5s ease-out 0.5s backwards; }
 
 .content-area,
 .widget-area {
@@ -1094,7 +1120,10 @@ blockquote.alignright {
     height: 100vh;
     z-index: -1;
     background: url("images/hugobaeta-home-alt.jpg") no-repeat center center;
-    background-size: cover; }
+    background-size: cover;
+    -webkit-animation: fadein 1s ease-in backwards;
+    -moz-animation: fadein 1s ease-in backwards;
+    animation: fadein 1s ease-in backwards; }
   .home .site-content {
     position: absolute;
     top: 70vh;
@@ -1123,13 +1152,16 @@ blockquote.alignright {
               font-size: 0.808em; } }
 
 .page-about {
-  background: #7B5C6C; }
+  background: #a50071; }
 
 /*--------------------------------------------------------------
 ## Home
 --------------------------------------------------------------*/
 .page-about {
-  background-color: #7B5C6C; }
+  background-color: #BE0082;
+  background-image: -webkit-linear-gradient(-235deg, #BE0082 0%, #a50071 100%);
+  background-image: linear-gradient(-35deg,#BE0082 0%, #a50071 100%);
+  background-attachment: fixed; }
   .page-about:after {
     content: "";
     display: block;
@@ -1141,7 +1173,7 @@ blockquote.alignright {
     z-index: -1;
     background: url("images/hugobaeta-about.png") no-repeat center center;
     background-size: cover;
-    opacity: .5; }
+    opacity: .3; }
   .page-about .entry-header {
     position: relative;
     width: 200px;
@@ -1173,82 +1205,278 @@ blockquote.alignright {
 /*--------------------------------------------------------------
 ## Portfolio
 --------------------------------------------------------------*/
-.post-type-archive-jetpack-portfolio .site-content,
-.single-jetpack-portfolio .site-content {
-  margin: 0;
-  padding-top: 0; }
-.post-type-archive-jetpack-portfolio .content-area,
-.single-jetpack-portfolio .content-area {
-  max-width: 100%;
-  padding: 0;
-  margin: 0; }
-.post-type-archive-jetpack-portfolio .hentry,
-.single-jetpack-portfolio .hentry {
-  border: none;
-  margin: 0;
-  padding: 0; }
-  .post-type-archive-jetpack-portfolio .hentry a,
-  .single-jetpack-portfolio .hentry a {
-    text-decoration: none; }
-.post-type-archive-jetpack-portfolio .project-header,
-.single-jetpack-portfolio .project-header {
-  position: relative;
-  padding: 1.5em;
-  text-align: center;
+.post-type-archive-jetpack-portfolio,
+.single-jetpack-portfolio {
+  background-color: #605288;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover; }
-  .post-type-archive-jetpack-portfolio .project-header .project-header-content,
-  .single-jetpack-portfolio .project-header .project-header-content {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 100%;
-    padding: 0 1.5em;
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    transform: translateY(-50%); }
-  .post-type-archive-jetpack-portfolio .project-header h1, .post-type-archive-jetpack-portfolio .project-header h2,
-  .single-jetpack-portfolio .project-header h1,
-  .single-jetpack-portfolio .project-header h2 {
+  .post-type-archive-jetpack-portfolio .site-content,
+  .single-jetpack-portfolio .site-content {
+    margin: 0;
+    padding-top: 0; }
+  .post-type-archive-jetpack-portfolio .content-area,
+  .single-jetpack-portfolio .content-area {
+    max-width: 100%;
+    padding: 0;
     margin: 0; }
-  .post-type-archive-jetpack-portfolio .project-header .project-intro,
-  .single-jetpack-portfolio .project-header .project-intro {
-    font-size: 0.808em;
-    font-style: italic;
-    max-width: 38.443359375em;
-    margin: 0 auto; }
-    @media (min-width: 768px) {
-      .post-type-archive-jetpack-portfolio .project-header .project-intro,
-      .single-jetpack-portfolio .project-header .project-intro {
-        font-size: 0.6666666667em; } }
+  .post-type-archive-jetpack-portfolio .hentry,
+  .single-jetpack-portfolio .hentry {
+    border: none;
+    margin: 0;
+    padding: 0; }
+    .post-type-archive-jetpack-portfolio .hentry a,
+    .single-jetpack-portfolio .hentry a {
+      text-decoration: none; }
+  .post-type-archive-jetpack-portfolio .project-header,
+  .single-jetpack-portfolio .project-header {
+    position: relative;
+    padding: 1.5em;
+    text-align: center;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    .post-type-archive-jetpack-portfolio .project-header .project-header-content,
+    .single-jetpack-portfolio .project-header .project-header-content {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      padding: 0 1.5em;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%); }
+    .post-type-archive-jetpack-portfolio .project-header h1, .post-type-archive-jetpack-portfolio .project-header h2,
+    .single-jetpack-portfolio .project-header h1,
+    .single-jetpack-portfolio .project-header h2 {
+      margin: 0; }
+    .post-type-archive-jetpack-portfolio .project-header .project-intro,
+    .single-jetpack-portfolio .project-header .project-intro {
+      font-size: 0.808em;
+      font-style: italic;
+      max-width: 38.443359375em;
+      margin: 0 auto; }
+      @media (min-width: 768px) {
+        .post-type-archive-jetpack-portfolio .project-header .project-intro,
+        .single-jetpack-portfolio .project-header .project-intro {
+          font-size: 0.6666666667em; } }
 
-.post-type-archive-jetpack-portfolio {
-  background-color: #605288; }
-  .post-type-archive-jetpack-portfolio .content-area {
-    overflow: hidden; }
-  .post-type-archive-jetpack-portfolio .project {
-    height: 95vh; }
-  .post-type-archive-jetpack-portfolio .project-header {
-    width: 100%;
-    height: 100%; }
+.post-type-archive-jetpack-portfolio .content-area {
+  overflow: hidden; }
+.post-type-archive-jetpack-portfolio .project {
+  height: 95vh; }
+.post-type-archive-jetpack-portfolio .project-header {
+  width: 100%;
+  height: 100%; }
 
 .single-jetpack-portfolio .project-header {
   width: 100%;
   height: 100vh; }
   @media (min-width: 1024px) {
     .single-jetpack-portfolio .project-header {
-      height: 70vh; } }
+      height: 80vh; } }
 .single-jetpack-portfolio .entry-content {
   margin: 0;
-  padding: 1.5em 1em;
-  background: rgba(0, 0, 0, 0.15);
-  color: rgba(255, 255, 255, 0.75); }
-  .single-jetpack-portfolio .entry-content .wrap {
-    max-width: 38.443359375em;
-    margin: 0 auto; }
+  padding: 0 1em;
+  background: rgba(255, 255, 255, 0.75);
+  color: rgba(96, 82, 136, 0.8); }
+  .single-jetpack-portfolio .entry-content .project-url {
+    text-align: center;
+    margin: 0 auto 5.0625em; }
+    .single-jetpack-portfolio .entry-content .project-url.closer {
+      margin-top: 5.0625em; }
+    .single-jetpack-portfolio .entry-content .project-url a.button {
+      display: inline-block;
+      margin: 0;
+      padding: 1em 1em 0.9em;
+      font-family: "stratum-1-web", sans-serif;
+      font-size: 0.6666666667em;
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: 0.0877914952em;
+      text-transform: uppercase;
+      font-size: 0.808em;
+      line-height: 0;
+      border-radius: 3px;
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.8); }
+      .single-jetpack-portfolio .entry-content .project-url a.button:hover {
+        color: #fff; }
+  .single-jetpack-portfolio .entry-content .entry-description,
+  .single-jetpack-portfolio .entry-content .entry-image-description {
+    width: 100%;
+    max-width: 31.062234375em;
+    margin: 0 auto;
+    padding: 5.0625em 0; }
+    .single-jetpack-portfolio .entry-content .entry-description .small,
+    .single-jetpack-portfolio .entry-content .entry-image-description .small {
+      font-size: 0.808em; }
+      @media (min-width: 480px) {
+        .single-jetpack-portfolio .entry-content .entry-description .small,
+        .single-jetpack-portfolio .entry-content .entry-image-description .small {
+          font-size: 0.6666666667em; } }
+  .single-jetpack-portfolio .entry-content .entry-image {
+    margin: 0;
+    margin-right: -1em;
+    margin-left: -1em; }
+    .single-jetpack-portfolio .entry-content .entry-image p {
+      margin: 0; }
+    .single-jetpack-portfolio .entry-content .entry-image img {
+      width: 100%;
+      max-width: 100%;
+      margin: 0;
+      line-height: 0;
+      display: block; }
+    .single-jetpack-portfolio .entry-content .entry-image.double {
+      overflow: hidden; }
+      .single-jetpack-portfolio .entry-content .entry-image.double img {
+        margin: 0;
+        line-height: 0; }
+        @media (min-width: 768px) {
+          .single-jetpack-portfolio .entry-content .entry-image.double img {
+            width: 50%;
+            float: left; } }
+  .single-jetpack-portfolio .entry-content .entry-image-description {
+    padding-right: 1em;
+    padding-left: 1em;
+    clear: both;
+    text-align: center; }
+    @media (min-width: 480px) {
+      .single-jetpack-portfolio .entry-content .entry-image-description {
+        font-size: 0.808em; } }
+    @media (min-width: 768px) {
+      .single-jetpack-portfolio .entry-content .entry-image-description {
+        font-size: 0.6666666667em; } }
+    .single-jetpack-portfolio .entry-content .entry-image-description h2 {
+      font-size: 1.5em;
+      margin: 0;
+      color: rgba(96, 82, 136, 0.8); }
+    .single-jetpack-portfolio .entry-content .entry-image-description p {
+      margin-top: 1em; }
+  .single-jetpack-portfolio .entry-content a {
+    color: rgba(96, 82, 136, 0.8);
+    text-decoration: underline; }
+    .single-jetpack-portfolio .entry-content a:visited {
+      color: rgba(96, 82, 136, 0.8); }
+    .single-jetpack-portfolio .entry-content a:hover, .single-jetpack-portfolio .entry-content a:focus, .single-jetpack-portfolio .entry-content a:active {
+      color: #605288;
+      text-decoration: none; }
+
+.jetpack-portfolio-thefivethemes {
+  background-color: #64c8be; }
+  .jetpack-portfolio-thefivethemes .project-header-content .project-title {
+    text-indent: -9999px;
+    position: relative;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 500px;
+    background: url("images/thefivethemes-logo.png") no-repeat center center;
+    background-size: 100%; }
+    .jetpack-portfolio-thefivethemes .project-header-content .project-title:after {
+      content: '';
+      display: block;
+      padding-top: 100%; }
+  .jetpack-portfolio-thefivethemes .entry-content .entry-description,
+  .jetpack-portfolio-thefivethemes .entry-content .entry-image-description,
+  .jetpack-portfolio-thefivethemes .entry-content .entry-description h2,
+  .jetpack-portfolio-thefivethemes .entry-content .entry-image-description h2 {
+    color: rgba(15, 55, 95, 0.5); }
+  .jetpack-portfolio-thefivethemes .entry-content a {
+    color: rgba(15, 55, 95, 0.7);
+    text-decoration: underline; }
+    .jetpack-portfolio-thefivethemes .entry-content a:visited {
+      color: rgba(15, 55, 95, 0.7); }
+    .jetpack-portfolio-thefivethemes .entry-content a:hover, .jetpack-portfolio-thefivethemes .entry-content a:focus, .jetpack-portfolio-thefivethemes .entry-content a:active {
+      color: rgba(15, 55, 95, 0.9);
+      text-decoration: none; }
+    .jetpack-portfolio-thefivethemes .entry-content a.button {
+      background: rgba(100, 200, 190, 0.8); }
+      .jetpack-portfolio-thefivethemes .entry-content a.button:hover {
+        background: #6fccc3; }
+
+.jetpack-portfolio-wordpress-com {
+  background-color: #0087be; }
+  .jetpack-portfolio-wordpress-com .project-header-content .project-title {
+    text-indent: -9999px;
+    position: relative;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 500px;
+    background: url("images/wpcom-logo.png") no-repeat center center;
+    background-size: 100%; }
+    .jetpack-portfolio-wordpress-com .project-header-content .project-title:after {
+      content: '';
+      display: block;
+      padding-top: 100%; }
+  .jetpack-portfolio-wordpress-com .entry-content .entry-description,
+  .jetpack-portfolio-wordpress-com .entry-content .entry-image-description,
+  .jetpack-portfolio-wordpress-com .entry-content .entry-description h2,
+  .jetpack-portfolio-wordpress-com .entry-content .entry-image-description h2 {
+    color: rgba(0, 135, 190, 0.8); }
+  .jetpack-portfolio-wordpress-com .entry-content a {
+    color: rgba(0, 135, 190, 0.7);
+    text-decoration: underline; }
+    .jetpack-portfolio-wordpress-com .entry-content a:visited {
+      color: rgba(0, 135, 190, 0.7); }
+    .jetpack-portfolio-wordpress-com .entry-content a:hover, .jetpack-portfolio-wordpress-com .entry-content a:focus, .jetpack-portfolio-wordpress-com .entry-content a:active {
+      color: rgba(0, 135, 190, 0.9);
+      text-decoration: none; }
+    .jetpack-portfolio-wordpress-com .entry-content a.button {
+      background: rgba(0, 135, 190, 0.8); }
+      .jetpack-portfolio-wordpress-com .entry-content a.button:hover {
+        background: #0092cd; }
+
+.jetpack-portfolio-orbitalis {
+  background-color: #0f4992; }
+  .jetpack-portfolio-orbitalis .project-header-content .project-title {
+    text-indent: -9999px;
+    position: relative;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 500px;
+    background: url("images/orbitalis-logo.png") no-repeat center center;
+    background-size: 100%; }
+    .jetpack-portfolio-orbitalis .project-header-content .project-title:after {
+      content: '';
+      display: block;
+      padding-top: 100%; }
+  .jetpack-portfolio-orbitalis .entry-content .entry-description,
+  .jetpack-portfolio-orbitalis .entry-content .entry-image-description,
+  .jetpack-portfolio-orbitalis .entry-content .entry-description h2,
+  .jetpack-portfolio-orbitalis .entry-content .entry-image-description h2 {
+    color: rgba(15, 73, 146, 0.5); }
+  .jetpack-portfolio-orbitalis .entry-content a {
+    color: rgba(15, 73, 146, 0.7);
+    text-decoration: underline; }
+    .jetpack-portfolio-orbitalis .entry-content a:visited {
+      color: rgba(15, 73, 146, 0.7); }
+    .jetpack-portfolio-orbitalis .entry-content a:hover, .jetpack-portfolio-orbitalis .entry-content a:focus, .jetpack-portfolio-orbitalis .entry-content a:active {
+      color: rgba(15, 73, 146, 0.9);
+      text-decoration: none; }
+    .jetpack-portfolio-orbitalis .entry-content a.button {
+      background: rgba(15, 73, 146, 0.8); }
+      .jetpack-portfolio-orbitalis .entry-content a.button:hover {
+        background: #1050a0; }
 
 /*--------------------------------------------------------------
 ## Archive
@@ -1506,14 +1734,15 @@ blockquote.alignright {
 ## Footer
 --------------------------------------------------------------*/
 .site-footer {
-  padding: 1em 1em 1.212em;
-  margin: 2.25em 0 0;
-  color: rgba(255, 255, 255, 0.4); }
+  padding: 2.25em 1em 2.727em;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.4);
+  text-align: center; }
   .site-footer .site-info {
     list-style: none;
     margin: 0;
     padding: 0;
-    text-align: center; }
+    opacity: .5; }
     .site-footer .site-info li {
       display: inline-block;
       text-transform: uppercase;
@@ -1542,7 +1771,7 @@ blockquote.alignright {
 ## 404
 --------------------------------------------------------------*/
 .error404 {
-  background: #D2DC64; }
+  background: #49ad5b; }
   .error404:after {
     content: "";
     display: block;

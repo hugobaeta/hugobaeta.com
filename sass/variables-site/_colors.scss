@@ -19,9 +19,10 @@ $color__highlight: $color__yellow;
 
 // Tints
 $color__base-tint10: tint($color__base,10%);
+
 $color__base-tint20: tint($color__base,20%);
-$color__base-tint30: tint($color__base,30%);
 $color__base-tint40: tint($color__base,40%);
+
 $color__base-tint60: tint($color__base,60%);
 $color__base-tint70: tint($color__base,70%);
 $color__base-tint80: tint($color__base,80%);
@@ -56,14 +57,15 @@ $color__highlight-mix60: mix($color__base, $color__highlight-tint20, 60%);
 $color__background-body: $color__purple;
 $color__background-body-home: $color__magenta;
 $color__background-body-portfolio: $color__purple;
-$color__background-body-about: $color__brown;
-$color__background-404: $color__yellow;
+$color__background-body-about: darken($color__magenta,5%);
+$color__background-404: darken($color__green,10%);
 $color__background-screen: #fff;
-$color__background-hr: rgba(#fff,.25);
-$color__background-pre: $color__base-tint95;
-$color__background-ins: $color__base-tint95;
-$color__background-table-header: rgba($color__base,.05);
-$color__background-portfolio-description: rgba(#000,.15);
+$color__background-hr: rgba(#fff,.15);
+$color__background-pre: rgba(#fff,.15);
+$color__background-ins: rgba(#fff,.15);
+$color__background-table-header: rgba(#000,.05);
+
+$color__background-portfolio-description: rgba(#fff,.75);
 
 
 // Text
@@ -88,13 +90,16 @@ $color__text-header: rgba(#fff,.4);
 $color__text-secondary: rgba($color__base,.5);
 $color__text-footer: rgba(#fff,.4);
 
-$color__text-portfolio-description: rgba(#fff,.75);
+$color__text-portfolio-description: rgba($color__background-body-portfolio,.8);
 
 // Links
 
 $color__link: rgba(#fff,.8);
 $color__link-visited: rgba(#fff,.8);
 $color__link-hover: #fff;
+
+$color__link-button: rgba(#000,.2);
+$color__link-button-hover: rgba(#000,.1);
 
 $color__link-header: rgba(#fff,.8);
 $color__link-header-nav: rgba(#fff,.6);
@@ -111,6 +116,10 @@ $color__link-footer-hover: #fff;
 $color__sharedaddy-icon: $color__base-tint80;
 $color__sharedaddy-icon-hover: $color__base-tint60;
 
+
+
+$color__link-portfolio-description: rgba($color__background-body-portfolio,.8);
+$color__link-portfolio-description-hover: rgba($color__background-body-portfolio,1);
 
 
 $color__asidelink: $color__base-tint60;

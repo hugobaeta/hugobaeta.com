@@ -14,9 +14,12 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
+        <nav id="footer-navigation" class="main-navigation" role="navigation">
+            <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+        </nav><!-- #footer-navigation -->
 		<ul class="site-info">
-            <li class="cms-info"><a href="<?php echo esc_url( __( 'http://wordpress.org/', 'magnus' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'magnus' ), 'WordPress' ); ?></a></li>
-            <li class="copyright-info">Content &copy; <a href="http://hugobaeta.com" rel="author">Hugo Baeta</a></li>            
+            <li class="cms-info">Proudly powered by <a href="http://wordpress.org/>">WordPress</a></li>
+            <li class="author-info">Made with Love by <a href="http://hugobaeta.com" rel="author">Hugo Baeta</a></li>            
         </ul><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

@@ -11,8 +11,10 @@
     font-size: ms(-3);
 
     @include respondTo(atleast-medium) {
-        font-size: ms(-2);
-        text-align: right;
+        .site-header & {
+            font-size: ms(-2);
+            text-align: right;
+        }
     }
 
     h2 {
@@ -29,8 +31,10 @@
     ul li {
         display: inline-block;
         @include respondTo(atleast-medium) {
-            &:last-child {
-                margin-right: -(ms(0));
+            .site-header & {
+                &:last-child {
+                    margin-right: -(ms(0));
+                }
             }
         }
     }

@@ -19,12 +19,19 @@
 
 <?php wp_head(); ?>
 
-<?php if ( is_singular( 'jetpack-portfolio' ) ) {
-	if(get_field('portfolio-project-color')) {
-			echo '<style type="text/css">body {background: ' . get_field('portfolio-project-color') . ';}</style>';
-	};
-}?>
 
+<!-- 
+<?php if ( is_singular( 'jetpack-portfolio' ) ) {
+	$image_id = get_post_thumbnail_id();
+    $url = wp_get_attachment_image_src( $image_id, 'hugobaeta-project-image' ); ?>
+
+    <style type="text/css">
+    	body {
+    		background-image: url('<?php echo esc_attr( $url[0] ); ?>');
+    	}
+    </style>
+<?php } ?>
+ -->
 
 </head>
 

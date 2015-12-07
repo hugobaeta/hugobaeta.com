@@ -5,7 +5,7 @@
     padding: ms(0);
     text-align: center;
 
-    @include animation(fadein 1s ease-out 0s backwards); //Fade-in
+    @include animation(fadein 0.5s ease-out 1s backwards);
 
     @include respondTo(upto-narrow) {
         font-size: ms(2);

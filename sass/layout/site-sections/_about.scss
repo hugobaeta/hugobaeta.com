@@ -1,5 +1,6 @@
 .page-about {
-    background-color: $color__background-body-about;
+    @include linear-gradient(-35deg, $color__background-body-home 0%, $color__background-body-about 100%);
+    background-attachment: fixed;
 
     &:after {
         content: "";
@@ -12,7 +13,7 @@
         z-index: -1;
         background: url('images/hugobaeta-about.png') no-repeat center center;
         background-size: cover;
-        opacity: .5;
+        opacity: .3;
     }
 
 

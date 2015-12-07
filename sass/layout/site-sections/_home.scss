@@ -12,6 +12,7 @@
         z-index: -1;
         background: url('images/hugobaeta-home-alt.jpg') no-repeat center center;
         background-size: cover;
+        @include animation(fadein 1s ease-in backwards);
     }
     
 

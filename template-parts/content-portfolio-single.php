@@ -21,14 +21,9 @@
     </header><!-- .project-header -->
 
 	<div class="entry-content">
-        <div class="wrap">
-            <div class="entry-description">
-                <?php the_content(); ?>
-            </div><!-- .entry-description -->
-            <?php if(get_field('portfolio-project-url')) {
-                echo '<div class="project-url"><a class="button" href="' . get_field('portfolio-project-url') . '" title="Visit Website">Visit Website</a></div>';
-            }?>
-        </div>
+        
+        <?php the_content(); ?>
+
 	</div><!-- .entry-content -->
 
 </article><!-- #post-## -->
