@@ -7,6 +7,12 @@
     background-repeat: no-repeat;
     background-size: cover;
 
+    .site-header a:hover,
+    a:hover,
+    a.button:hover {
+        color: $color__link-portfolio-hover;
+    }
+
     .site-content {
         margin: 0;
         padding-top: 0;
@@ -52,7 +58,7 @@
         .project-intro {
             font-size: ms(-1);
             font-style: italic;
-            max-width: ms(18);
+            max-width: ms(17);
             margin: 0 auto;
             @include respondTo(atleast-medium) {
                 font-size: ms(-2);
@@ -68,16 +74,26 @@
     }
 
     .project {
-       height: 95vh;
-       // @include respondTo(atleast-wide-medium-height) {
-       //      width: 50vw;
-       //      height: 50vh;
-       //      float: left;
-       //      &:first-child {
-       //          width: 100vw;
-       //          height: 50vh;
-       //      }
-       //  }
+       height: 80vh;
+       @include respondTo(atleast-wide-medium-height) {
+            width: 50vw;
+            height: 32vw;
+            float: left;
+            &:first-child {
+                width: 100vw;
+                height: 62vw;
+                max-height: 90vh;
+            }
+        }
+        @include respondTo(atleast-wide-medium-height) {
+            .project-header h2 {
+                font-size: ms(2);
+            }
+
+            &:first-child .project-header h2 {
+                font-size: ms(4);
+            }
+        }
     }
     .project-header {
         width: 100%;
@@ -91,9 +107,6 @@
     .project-header {
         width: 100%;
         height: 100vh;
-        @include respondTo(atleast-wide) {
-            height: 80vh
-        }
     }
 
     .entry-content {
@@ -119,7 +132,7 @@
                 text-decoration: none;
                 color: $color__link;
                 &:hover {
-                    color: $color__link-hover;
+                    color: $color__link-portfolio-hover;
                 }
             }
         }
@@ -230,6 +243,7 @@ $color_portfolio_orbitalis-secondary: #501441;
             max-width: 500px;
             background: url('images/#{$project-logo-url}-logo.png') no-repeat center center;
             background-size: 100%;
+            @include animation(fadein 0.5s ease-in 1s backwards);
             &:after {
                 content: '';
                 display: block;
@@ -265,6 +279,7 @@ $color_portfolio_orbitalis-secondary: #501441;
     background-color: $color_portfolio_thefivethemes-primary;
     @include project-logo(thefivethemes);
     .entry-content {
+        background: lighten($color_portfolio_thefivethemes-primary,30%);
         .entry-description,
         .entry-image-description,
         .entry-description h2,

@@ -135,9 +135,20 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 83923,
+		"initialSize": 62143,
 		"inputAbbreviatedPath": "\/images\/thefivethemes-feature.png",
 		"outputAbbreviatedPath": "\/images\/thefivethemes-feature.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/thefivethemes-logo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 12509,
+		"inputAbbreviatedPath": "\/images\/thefivethemes-logo.png",
+		"outputAbbreviatedPath": "\/images\/thefivethemes-logo.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

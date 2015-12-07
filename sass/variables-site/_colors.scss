@@ -3,16 +3,13 @@
 --------------------------------------------------------------*/
 
 // Base Colors
-$color__magenta: #BE0082;
-$color__purple: #605288;
-$color__brown: #7B5C6C;
-$color__blue: #325AA0;
-$color__teal: #00A38E;
-$color__green: #69C079;
-$color__yellow: #D2DC64;
+$color__magenta: #be0082;
+$color__yellow: #dcd264;
+$color__offwhite: #f0f5f0;
+$color__gray: #4c515c;
 
 // Color Abstractions
-$color__base: $color__blue;
+$color__base: $color__gray;
 $color__fill: $color__magenta;
 $color__accent: $color__magenta;
 $color__highlight: $color__yellow;
@@ -54,70 +51,71 @@ $color__highlight-mix60: mix($color__base, $color__highlight-tint20, 60%);
 
 // Backgrounds
 
-$color__background-body: $color__purple;
+$color__background-body: $color__gray;
 $color__background-body-home: $color__magenta;
-$color__background-body-portfolio: $color__purple;
-$color__background-body-about: darken($color__magenta,5%);
-$color__background-404: darken($color__green,10%);
-$color__background-screen: #fff;
-$color__background-hr: rgba(#fff,.15);
-$color__background-pre: rgba(#fff,.15);
-$color__background-ins: rgba(#fff,.15);
-$color__background-table-header: rgba(#000,.05);
+$color__background-body-portfolio: $color__gray;
+$color__background-body-about: mix($color__gray, $color__magenta,90%);
 
-$color__background-portfolio-description: rgba(#fff,.75);
+$color__background-404: darken($color__yellow,10%);
+$color__background-screen: $color__offwhite;
+$color__background-hr: rgba($color__offwhite,.15);
+$color__background-pre: rgba($color__offwhite,.15);
+$color__background-ins: rgba($color__offwhite,.15);
+$color__background-table-header: rgba($color__gray,.05);
+
+$color__background-portfolio-description: rgba($color__offwhite,.75);
 
 
 // Text
 
-$color__text-screen: #fff;
+$color__text-screen: $color__offwhite;
 $color__text-input: $color__base-tint40;
 $color__text-input-focus: $color__base-tint20;
 
-$color__text-main: rgba(#fff,.8);
+$color__text-main: rgba($color__offwhite,.8);
 
-$color__headings: rgba(#fff,.6);
+$color__headings: rgba($color__offwhite,.6);
 
 $color__text-soft: $color__base-tint60;
 $color__text-softer: $color__base-tint80;
 
 
 
-$color__text-blockquote: rgba(#fff,.8);
-$color__text-blockquote-cite: rgba(#fff,.6);
+$color__text-blockquote: rgba($color__offwhite,.8);
+$color__text-blockquote-cite: rgba($color__offwhite,.6);
 
-$color__text-header: rgba(#fff,.4);
+$color__text-header: rgba($color__offwhite,.4);
 $color__text-secondary: rgba($color__base,.5);
-$color__text-footer: rgba(#fff,.4);
+$color__text-footer: rgba($color__offwhite,.4);
 
 $color__text-portfolio-description: rgba($color__background-body-portfolio,.8);
 
 // Links
 
-$color__link: rgba(#fff,.8);
-$color__link-visited: rgba(#fff,.8);
-$color__link-hover: #fff;
+$color__link: rgba($color__offwhite,.8);
+$color__link-visited: rgba($color__offwhite,.8);
+$color__link-hover: $color__highlight;
 
-$color__link-button: rgba(#000,.2);
-$color__link-button-hover: rgba(#000,.1);
+$color__link-button: rgba($color__gray,.2);
+$color__link-button-hover: rgba($color__gray,.1);
 
-$color__link-header: rgba(#fff,.8);
-$color__link-header-nav: rgba(#fff,.6);
-$color__link-header-hover: #fff;
+$color__link-header: rgba($color__offwhite,.8);
+$color__link-header-nav: rgba($color__offwhite,.6);
+$color__link-header-hover: $color__highlight;
 
 $color__link-secondary-hover: rgba($color__base,.8);
 
 $color__link-post-title: $color__base-tint40;
 $color__link-post-title-hover: $color__accent;
 
-$color__link-footer: rgba(#fff,.4);
-$color__link-footer-hover: #fff;
+$color__link-footer: rgba($color__offwhite,.4);
+$color__link-footer-hover: $color__offwhite;
 
 $color__sharedaddy-icon: $color__base-tint80;
 $color__sharedaddy-icon-hover: $color__base-tint60;
 
 
-
+$color__link-portfolio-hover: $color__offwhite;
 $color__link-portfolio-description: rgba($color__background-body-portfolio,.8);
 $color__link-portfolio-description-hover: rgba($color__background-body-portfolio,1);
 
@@ -126,7 +124,7 @@ $color__asidelink: $color__base-tint60;
 $color__asidelink-hover: $color__accent;
 
 $color__headernavlink: rgba($color__base-tint90,.7);
-$color__headernavlink-hover: #fff;
+$color__headernavlink-hover: $color__offwhite;
 
 
 // Forms
@@ -136,7 +134,7 @@ $color__background-button-hover: $color__accent-tint20;
 $color__background-button-focus: $color__accent-mix10;
 
 $color__text-button: $color__accent-tint90;
-$color__text-button-hover: #fff;
+$color__text-button-hover: $color__offwhite;
 $color__textshadow-button-hover: $color__accent-mix20;
 
 $color__border-button: $color__accent $color__accent-mix20 $color__accent-mix20;
@@ -151,7 +149,7 @@ $color__border-abbr: $color__base-tint60;
 
 
 // Others
-$color__border-base: rgba(#fff,.15);
+$color__border-base: rgba($color__offwhite,.15);
 $color__border-secondary: rgba($color__base,.3);
 $color__border-sidebar-navigation: $color__base-tint80;
 $color__border-table-row: rgba($color__base,.03);
