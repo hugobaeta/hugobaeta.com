@@ -63,8 +63,8 @@ $color__background-pre: rgba($color__offwhite,.15);
 $color__background-ins: rgba($color__offwhite,.15);
 $color__background-table-header: rgba($color__gray,.05);
 
-$color__background-portfolio-description: rgba($color__offwhite,.75);
-
+$color__background-portfolio-description: rgba($color__offwhite,.8);
+$color__background-footer-contact: rgba($color__offwhite,.1);
 
 // Text
 
@@ -86,7 +86,8 @@ $color__text-blockquote-cite: rgba($color__offwhite,.6);
 
 $color__text-header: rgba($color__offwhite,.4);
 $color__text-secondary: rgba($color__base,.5);
-$color__text-footer: rgba($color__offwhite,.4);
+
+$color__text-footer: rgba($color__offwhite,.5);
 
 $color__text-portfolio-description: rgba($color__background-body-portfolio,.8);
 
@@ -108,7 +109,7 @@ $color__link-secondary-hover: rgba($color__base,.8);
 $color__link-post-title: $color__base-tint40;
 $color__link-post-title-hover: $color__accent;
 
-$color__link-footer: rgba($color__offwhite,.4);
+$color__link-footer: rgba($color__offwhite,.6);
 $color__link-footer-hover: $color__offwhite;
 
 $color__sharedaddy-icon: $color__base-tint80;

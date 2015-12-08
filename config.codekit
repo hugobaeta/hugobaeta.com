@@ -153,6 +153,39 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/underscoresme-logo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 7649,
+		"inputAbbreviatedPath": "\/images\/underscoresme-logo.png",
+		"outputAbbreviatedPath": "\/images\/underscoresme-logo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/vitesseenvogue-feature.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 72646,
+		"inputAbbreviatedPath": "\/images\/vitesseenvogue-feature.png",
+		"outputAbbreviatedPath": "\/images\/vitesseenvogue-feature.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/vitesseenvogue-logo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 9038,
+		"inputAbbreviatedPath": "\/images\/vitesseenvogue-logo.png",
+		"outputAbbreviatedPath": "\/images\/vitesseenvogue-logo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/wordpresscom-feature.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -160,6 +193,17 @@
 		"initialSize": 19042,
 		"inputAbbreviatedPath": "\/images\/wordpresscom-feature.png",
 		"outputAbbreviatedPath": "\/images\/wordpresscom-feature.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/wpcom-logo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 7913,
+		"inputAbbreviatedPath": "\/images\/wpcom-logo.png",
+		"outputAbbreviatedPath": "\/images\/wpcom-logo.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

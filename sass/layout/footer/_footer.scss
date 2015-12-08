@@ -2,7 +2,31 @@
     padding: ms(4) ms(0) ms(5);
     margin: 0;
     color: $color__text-footer;
-    text-align: center;
+    text-align: center;  
+
+    .site-contact {
+        padding: 0 0 ms(4);
+        border-bottom: 4px solid $color__border-base;
+        p {
+            margin: 0; 
+            &.small {
+                font-size: ms(-1);
+                margin-top: ms(0);
+                opacity: .8;
+            }
+        }
+        a {
+            text-decoration: underline;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+
+    .main-navigation,
+    .site-info {
+        padding: ms(4) ms(0) 0;
+    }
 
     .site-info {
         list-style: none;

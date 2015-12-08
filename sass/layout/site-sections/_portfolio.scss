@@ -107,6 +107,7 @@
     .project-header {
         width: 100%;
         height: 100vh;
+        background-attachment: fixed;
     }
 
     .entry-content {
@@ -152,7 +153,8 @@
             }
         }
 
-        .entry-image {
+        .entry-image,
+        .entry-video {
             margin: 0;
             margin-right: -(ms(0));
             margin-left: -(ms(0));
@@ -226,9 +228,13 @@
 $color_portfolio_thefivethemes-primary: #64c8be;
 $color_portfolio_thefivethemes-secondary: #0F375F;
 $color_portfolio_wordpresscom-primary: #0087be;
-$color_portfolio_wordpresscom-secondary: #64c8be;
+$color_portfolio_wordpresscom-secondary: #87a6bc;
 $color_portfolio_orbitalis-primary: lighten(#0a3264,10%);
 $color_portfolio_orbitalis-secondary: #501441;
+$color_portfolio_vitesseenvogue-primary: #B62079;
+$color_portfolio_vitesseenvogue-secondary: darken(#B62079,10%);;
+$color_portfolio_underscores-primary: #757D98;
+$color_portfolio_underscores-secondary: #8CC7C2;
 
 // Mixins
 @mixin project-logo($project-logo-url) {
@@ -294,13 +300,14 @@ $color_portfolio_orbitalis-secondary: #501441;
     background-color: $color_portfolio_wordpresscom-primary;
     @include project-logo(wpcom);
     .entry-content {
+        background: mix(white,$color_portfolio_wordpresscom-secondary,70%);
         .entry-description,
         .entry-image-description,
         .entry-description h2,
         .entry-image-description h2 {
-            color: rgba($color_portfolio_wordpresscom-primary,.8);
+            color: $color_portfolio_wordpresscom-secondary;
         }
-        @include project-links($color_portfolio_wordpresscom-primary);
+        @include project-links($color_portfolio_wordpresscom-secondary,$color_portfolio_wordpresscom-primary);
     }
 }
 
@@ -315,5 +322,33 @@ $color_portfolio_orbitalis-secondary: #501441;
             color: rgba($color_portfolio_orbitalis-primary,.5);
         }
         @include project-links($color_portfolio_orbitalis-primary);
+    }
+}
+
+.jetpack-portfolio-vitesse-en-vogue {
+    background-color: $color_portfolio_vitesseenvogue-primary;
+    @include project-logo(vitesseenvogue);
+    .entry-content {
+        .entry-description,
+        .entry-image-description,
+        .entry-description h2,
+        .entry-image-description h2 {
+            color: rgba($color_portfolio_vitesseenvogue-secondary,.6);
+        }
+        @include project-links($color_portfolio_vitesseenvogue-primary);
+    }
+}
+
+.jetpack-portfolio-underscores-me {
+    background-color: $color_portfolio_underscores-primary;
+    @include project-logo(underscoresme);
+    .entry-content {
+        .entry-description,
+        .entry-image-description,
+        .entry-description h2,
+        .entry-image-description h2 {
+            color: rgba($color_portfolio_underscores-primary,.5);
+        }
+        @include project-links($color_portfolio_underscores-primary,$color_portfolio_underscores-secondary);
     }
 }
