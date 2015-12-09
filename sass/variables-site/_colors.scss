@@ -56,7 +56,8 @@ $color__background-body-home: $color__magenta;
 $color__background-body-portfolio: $color__gray;
 $color__background-body-about: mix($color__gray, $color__magenta,90%);
 
-$color__background-404: darken($color__yellow,10%);
+$color__background-404: mix($color__magenta, $color__yellow,80%);
+$color__background-404-alt: mix($color__magenta, $color__yellow,50%);
 $color__background-screen: $color__offwhite;
 $color__background-hr: rgba($color__offwhite,.15);
 $color__background-pre: rgba($color__offwhite,.15);
@@ -131,8 +132,8 @@ $color__headernavlink-hover: $color__offwhite;
 // Forms
 
 $color__background-button: $color__accent;
-$color__background-button-hover: $color__accent-tint20;
-$color__background-button-focus: $color__accent-mix10;
+$color__background-button-hover: mix($color__magenta, $color__yellow,80%);
+$color__background-button-focus: mix($color__magenta, $color__yellow,90%);
 
 $color__text-button: $color__accent-tint90;
 $color__text-button-hover: $color__offwhite;

@@ -1,5 +1,6 @@
 .error404 {
-    background: $color__background-404;
+    @include linear-gradient(-35deg, $color__background-404-alt 0%, $color__background-404 100%);
+    background-attachment: fixed;
 
     &:after {
         content: "";
@@ -15,33 +16,21 @@
         opacity: .3;
     }
 
-
     .not-found {
-        // position: absolute;
-        // top: 45%;
-        // @include transform(translateY(-45%));
-
-        .page-header,
-        .page-content {
-            padding: 0 ms(0);
-            margin: 0 auto;
-            max-width: ms(18);
-
-            color: white;
+        text-align: center;
+        label {
+            font-size: ms(-1);
+            margin-right: 20px;
         }
-    }
 
-    
-}
 
-.error404,
-.search-no-results {
-    .site-content {
-        padding-bottom: 100px;
-    }
-    .site-footer{
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-    }
+
+        form {
+            input[type="submit"] {
+                position: relative;
+                top: -(ms(-6));
+                //@include transform(translateY(-20%));
+            }
+        }
+    } 
 }

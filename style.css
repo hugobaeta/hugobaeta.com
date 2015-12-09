@@ -585,7 +585,7 @@ form input[type="submit"] {
   form input[type="button"]:hover,
   form input[type="reset"]:hover,
   form input[type="submit"]:hover {
-    background: #cb339b;
+    background: #c42a7c;
     border-color: #cb339b #c51a8f #b3087e;
     color: #f0f5f0;
     text-shadow: 0 1px 1px #a7107a;
@@ -596,7 +596,7 @@ form input[type="submit"] {
   form input[type="button"]:active,
   form input[type="reset"]:active,
   form input[type="submit"]:active {
-    background: #b3087e;
+    background: #c1157f;
     border-color: #a7107a #a7107a #a7107a;
     border-width: 3px 1px 1px; }
   form button:focus,
@@ -1153,9 +1153,6 @@ blockquote.alignright {
           @media (max-width: 480px) {
             .home .site-content .home-content p.small {
               font-size: 0.808em; } }
-
-.page-about {
-  background: #574960; }
 
 /*--------------------------------------------------------------
 ## Home
@@ -1903,14 +1900,17 @@ blockquote.alignright {
     text-decoration: none; }
     .site-footer a:hover {
       color: #f0f5f0; }
-  .home .site-footer {
+  .home .site-footer, .error404 .site-footer {
     display: none; }
 
 /*--------------------------------------------------------------
 ## 404
 --------------------------------------------------------------*/
 .error404 {
-  background: #d3c63a; }
+  background-color: #cd6973;
+  background-image: -webkit-linear-gradient(-235deg, #cd6973 0%, #c42a7c 100%);
+  background-image: linear-gradient(-35deg,#cd6973 0%, #c42a7c 100%);
+  background-attachment: fixed; }
   .error404:after {
     content: "";
     display: block;
@@ -1923,21 +1923,14 @@ blockquote.alignright {
     background: url("images/hugobaeta-about.png") no-repeat center center;
     background-size: cover;
     opacity: .3; }
-  .error404 .not-found .page-header,
-  .error404 .not-found .page-content {
-    padding: 0 1em;
-    margin: 0 auto;
-    max-width: 38.443359375em;
-    color: white; }
-
-.error404 .site-content,
-.search-no-results .site-content {
-  padding-bottom: 100px; }
-.error404 .site-footer,
-.search-no-results .site-footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%; }
+  .error404 .not-found {
+    text-align: center; }
+    .error404 .not-found label {
+      font-size: 0.808em;
+      margin-right: 20px; }
+    .error404 .not-found form input[type="submit"] {
+      position: relative;
+      top: -0.2962962963em; }
 
 /*--------------------------------------------------------------
 # Sidebar
