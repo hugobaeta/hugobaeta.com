@@ -19,20 +19,6 @@
 
 <?php wp_head(); ?>
 
-
-<!-- 
-<?php if ( is_singular( 'jetpack-portfolio' ) ) {
-	$image_id = get_post_thumbnail_id();
-    $url = wp_get_attachment_image_src( $image_id, 'hugobaeta-project-image' ); ?>
-
-    <style type="text/css">
-    	body {
-    		background-image: url('<?php echo esc_attr( $url[0] ); ?>');
-    	}
-    </style>
-<?php } ?>
- -->
-
 </head>
 
 <body <?php body_class(); ?>>
@@ -49,7 +35,7 @@
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', 'fallback_cb'     => 'false' ) ); ?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
