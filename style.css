@@ -438,9 +438,10 @@ dfn, cite, em, i {
 blockquote {
   margin: 0 0 1em;
   font-style: italic;
-  font-size: 1.5em;
+  font-size: 1.212em;
   font-weight: 700;
   line-height: 1.212em;
+  letter-spacing: 0.0173415299em;
   color: rgba(240, 245, 240, 0.8); }
   blockquote cite,
   blockquote cite a {
@@ -1201,6 +1202,66 @@ blockquote.alignright {
         width: 500px; } }
     .page-about .entry-header h1 {
       display: none; }
+  .page-about .entry-content section {
+    margin-bottom: 5.0625em; }
+    .page-about .entry-content section:last-child {
+      margin-bottom: 0; }
+  .page-about .entry-content h3 {
+    text-align: center;
+    color: rgba(240, 245, 240, 0.3);
+    margin-bottom: 3.375em; }
+  .page-about .entry-content .about-work ol,
+  .page-about .entry-content .about-work li {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  .page-about .entry-content .about-work ol li,
+  .page-about .entry-content .quote {
+    border-bottom: 2px solid rgba(240, 245, 240, 0.05);
+    padding-bottom: 1.5em; }
+    .page-about .entry-content .about-work ol li:last-child,
+    .page-about .entry-content .quote:last-child {
+      border-bottom-width: 0; }
+  .page-about .entry-content .about-work-company,
+  .page-about .entry-content .quote .quote-author {
+    font-size: 1em;
+    margin-bottom: 0;
+    font-family: "ff-tisa-web-pro", Georgia, serif;
+    text-transform: none;
+    font-weight: normal;
+    letter-spacing: 0; }
+  .page-about .entry-content .about-work-position,
+  .page-about .entry-content .quote figcaption small {
+    font-size: 0.6666666667em;
+    margin-top: 0;
+    opacity: .6;
+    letter-spacing: 0.0315269014em; }
+  .page-about .entry-content .quote figcaption small {
+    display: block; }
+  .page-about .entry-content .quote blockquote {
+    opacity: .8;
+    color: #dcd264; }
+  .page-about .entry-content .quote figcaption {
+    position: relative;
+    padding-left: 60px; }
+    .page-about .entry-content .quote figcaption:before {
+      content: "";
+      display: block;
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      top: -5px;
+      left: 0;
+      border-radius: 25px; }
+  .page-about .entry-content .quote-mt figcaption:before {
+    background: url("images/avatar-mt.png") no-repeat center center;
+    background-size: cover; }
+  .page-about .entry-content .quote-berkun figcaption:before {
+    background: url("images/avatar-berkun.png") no-repeat center center;
+    background-size: cover; }
+  .page-about .entry-content .quote-pick figcaption:before {
+    background: url("images/avatar-pick.png") no-repeat center center;
+    background-size: cover; }
 
 /*--------------------------------------------------------------
 ## Portfolio

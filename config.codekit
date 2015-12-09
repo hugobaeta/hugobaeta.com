@@ -65,6 +65,39 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/images\/avatar-berkun.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5376,
+		"inputAbbreviatedPath": "\/images\/avatar-berkun.png",
+		"outputAbbreviatedPath": "\/images\/avatar-berkun.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/avatar-mt.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6217,
+		"inputAbbreviatedPath": "\/images\/avatar-mt.png",
+		"outputAbbreviatedPath": "\/images\/avatar-mt.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/avatar-pick.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 13696,
+		"inputAbbreviatedPath": "\/images\/avatar-pick.png",
+		"outputAbbreviatedPath": "\/images\/avatar-pick.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/hugobaeta-about-avatar.png": {
 		"fileType": 32768,
 		"ignore": 0,
