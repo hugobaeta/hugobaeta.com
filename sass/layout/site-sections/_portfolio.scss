@@ -215,8 +215,37 @@
                 text-decoration: none;
             }
         }
+    }
 
-
+    .post-navigation {
+        margin-bottom: 0;
+        .nav-previous,
+        .nav-next {
+            text-align: center;
+            margin: 0 auto;
+            &:before {
+                display: block;
+                @include text-format(heading-small);
+                font-size: ms(-3);
+                opacity: .5;
+            }
+            a {
+                font-size: ms(0);
+                letter-spacing: ms(-17);
+            }
+        }
+        .nav-previous {
+            float: right;
+            &:before {
+                content:'Next Project';
+            }
+        }
+        .nav-next {
+            float: left;
+            &:before {
+                content:'Previous Project';
+            }
+        }
     }
 }
 
@@ -293,6 +322,12 @@ $color_portfolio_underscores-secondary: #8CC7C2;
             color: rgba($color_portfolio_thefivethemes-secondary,.5);
         }
         @include project-links($color_portfolio_thefivethemes-secondary, $color_portfolio_thefivethemes-primary);
+    }
+    .post-navigation {
+        color: rgba($color_portfolio_thefivethemes-secondary,.5);
+        .nav-previous {
+            width: 100%;
+        }
     }
 }
 

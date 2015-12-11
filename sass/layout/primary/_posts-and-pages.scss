@@ -96,9 +96,9 @@
 
 
 .post-navigation {
-    margin: 0 0 ms(4);
-    padding: 0 0 ms(4);
-    border-bottom: 4px solid $color__border-base;
+    margin: 0;
+    padding: ms(4) ms(0);
+    background: $color__background-postnav;
     
     a {
         text-decoration: none;
