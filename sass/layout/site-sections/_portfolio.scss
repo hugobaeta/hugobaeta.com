@@ -1,11 +1,8 @@
 // Portfolio shared styles
 .post-type-archive-jetpack-portfolio,
 .single-jetpack-portfolio {
-    background-color: $color__background-body-portfolio;
-
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    // @include linear-gradient(-40deg, $color__background-body-portfolio-alt -101%, $color__background-body-portfolio -100%, rgba($color__background-body-portfolio-alt,.6) 60%, rgba($color__background-body-portfolio-alt,.5) 100%);
+    background-attachment: fixed;
 
     .site-header a:hover,
     a:hover,
@@ -115,6 +112,12 @@
         padding: 0 ms(0);
         background: $color__background-portfolio-description;
         color: $color__text-portfolio-description;
+
+        > h2, > h3 {
+            margin: ms(4) auto 0;
+            text-align: center;
+            color: $color__text-portfolio-description;
+        }
 
         .project-url {
             text-align: center;
@@ -254,16 +257,16 @@
 // Portfolio Singular Specifics
 
 // Color Variables
-$color_portfolio_thefivethemes-primary: #64c8be;
-$color_portfolio_thefivethemes-secondary: #0F375F;
-$color_portfolio_wordpresscom-primary: #0087be;
-$color_portfolio_wordpresscom-secondary: #87a6bc;
-$color_portfolio_orbitalis-primary: lighten(#0a3264,10%);
-$color_portfolio_orbitalis-secondary: #501441;
-$color_portfolio_vitesseenvogue-primary: #B62079;
-$color_portfolio_vitesseenvogue-secondary: darken(#B62079,10%);;
-$color_portfolio_underscores-primary: #757D98;
-$color_portfolio_underscores-secondary: #8CC7C2;
+$color__portfolio_thefivethemes-primary: #64c8be;
+$color__portfolio_thefivethemes-secondary: #0F375F;
+$color__portfolio_wordpresscom-primary: #0087be;
+$color__portfolio_wordpresscom-secondary: #87a6bc;
+$color__portfolio_orbitalis-primary: lighten(#0a3264,10%);
+$color__portfolio_orbitalis-secondary: #501441;
+$color__portfolio_vitesseenvogue-primary: #B62079;
+$color__portfolio_vitesseenvogue-secondary: darken(#B62079,10%);;
+$color__portfolio_underscores-primary: #757D98;
+$color__portfolio_underscores-secondary: #8CC7C2;
 
 // Mixins
 @mixin project-logo($project-logo-url) {
@@ -311,20 +314,22 @@ $color_portfolio_underscores-secondary: #8CC7C2;
 
 // Specifics
 .jetpack-portfolio-thefivethemes {
-    background-color: $color_portfolio_thefivethemes-primary;
+    background-color: mix($color__portfolio_thefivethemes-secondary,$color__portfolio_thefivethemes-primary,20%);
+    //background-color: $color__portfolio_thefivethemes-primary;
     @include project-logo(thefivethemes);
     .entry-content {
-        background: lighten($color_portfolio_thefivethemes-primary,30%);
+        background: lighten($color__portfolio_thefivethemes-primary,38%);
         .entry-description,
         .entry-image-description,
+        h2, h3,
         .entry-description h2,
         .entry-image-description h2 {
-            color: rgba($color_portfolio_thefivethemes-secondary,.5);
+            color: rgba($color__portfolio_thefivethemes-secondary,.5);
         }
-        @include project-links($color_portfolio_thefivethemes-secondary, $color_portfolio_thefivethemes-primary);
+        @include project-links($color__portfolio_thefivethemes-secondary, $color__portfolio_thefivethemes-primary);
     }
     .post-navigation {
-        color: rgba($color_portfolio_thefivethemes-secondary,.5);
+        color: rgba($color__portfolio_thefivethemes-secondary,.5);
         .nav-previous {
             width: 100%;
         }
@@ -332,58 +337,59 @@ $color_portfolio_underscores-secondary: #8CC7C2;
 }
 
 .jetpack-portfolio-wordpress-com {
-    background-color: $color_portfolio_wordpresscom-primary;
+    background-color: $color__portfolio_wordpresscom-primary;
     @include project-logo(wpcom);
     .entry-content {
-        background: mix(white,$color_portfolio_wordpresscom-secondary,70%);
+        background: mix(white,$color__portfolio_wordpresscom-secondary,70%);
         .entry-description,
         .entry-image-description,
         .entry-description h2,
         .entry-image-description h2 {
-            color: $color_portfolio_wordpresscom-secondary;
+            color: $color__portfolio_wordpresscom-secondary;
         }
-        @include project-links($color_portfolio_wordpresscom-secondary,$color_portfolio_wordpresscom-primary);
+        @include project-links($color__portfolio_wordpresscom-secondary,$color__portfolio_wordpresscom-primary);
     }
 }
 
 .jetpack-portfolio-orbitalis {
-    background-color: $color_portfolio_orbitalis-primary;
+    background-color: $color__portfolio_orbitalis-primary;
     @include project-logo(orbitalis);
     .entry-content {
         .entry-description,
         .entry-image-description,
         .entry-description h2,
         .entry-image-description h2 {
-            color: rgba($color_portfolio_orbitalis-primary,.5);
+            color: rgba($color__portfolio_orbitalis-primary,.5);
         }
-        @include project-links($color_portfolio_orbitalis-primary);
+        @include project-links($color__portfolio_orbitalis-primary);
     }
 }
 
 .jetpack-portfolio-vitesse-en-vogue {
-    background-color: $color_portfolio_vitesseenvogue-primary;
+    background-color: $color__portfolio_vitesseenvogue-primary;
     @include project-logo(vitesseenvogue);
     .entry-content {
         .entry-description,
         .entry-image-description,
         .entry-description h2,
         .entry-image-description h2 {
-            color: rgba($color_portfolio_vitesseenvogue-secondary,.6);
+            color: rgba($color__portfolio_vitesseenvogue-secondary,.6);
         }
-        @include project-links($color_portfolio_vitesseenvogue-primary);
+        @include project-links($color__portfolio_vitesseenvogue-primary);
     }
 }
 
 .jetpack-portfolio-underscores-me {
-    background-color: $color_portfolio_underscores-primary;
+    background-color: $color__portfolio_underscores-primary;
+    background-color: mix($color__portfolio_underscores-secondary,darken($color__portfolio_underscores-primary,5%),20%);
     @include project-logo(underscoresme);
     .entry-content {
         .entry-description,
         .entry-image-description,
         .entry-description h2,
         .entry-image-description h2 {
-            color: rgba($color_portfolio_underscores-primary,.5);
+            color: rgba($color__portfolio_underscores-primary,.5);
         }
-        @include project-links($color_portfolio_underscores-primary,$color_portfolio_underscores-secondary);
+        @include project-links($color__portfolio_underscores-primary,$color__portfolio_underscores-secondary);
     }
 }

@@ -54,7 +54,9 @@ $color__highlight-mix60: mix($color__base, $color__highlight-tint20, 60%);
 $color__background-body: $color__gray;
 $color__background-body-home: $color__magenta;
 $color__background-body-portfolio: $color__gray;
-$color__background-body-about: mix($color__gray, $color__magenta,90%);
+$color__background-body-portfolio-alt: mix($color__gray, $color__magenta,90%);;
+$color__background-body-about: mix($color__yellow, $color__magenta,10%);
+$color__background-body-about-alt: mix($color__gray, $color__magenta,80%);;
 
 $color__background-404: mix($color__magenta, $color__yellow,80%);
 $color__background-404-alt: mix($color__magenta, $color__yellow,50%);
@@ -87,6 +89,7 @@ $color__text-softer: $color__base-tint80;
 
 $color__text-blockquote: rgba($color__offwhite,.8);
 $color__text-blockquote-cite: rgba($color__offwhite,.6);
+$color__text-blockquote-about: mix($color__yellow, $color__magenta,90%);
 
 $color__text-header: rgba($color__offwhite,.4);
 $color__text-secondary: rgba($color__base,.5);

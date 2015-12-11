@@ -1121,11 +1121,13 @@ blockquote.alignright {
 ## Home
 --------------------------------------------------------------*/
 .page-about {
-  background-color: #be0082;
-  background-image: -webkit-linear-gradient(-235deg, #be0082 0%, #574960 100%);
-  background-image: -webkit-linear-gradient(125deg,#be0082 0%, #574960 100%);
-  background-image: linear-gradient(-35deg,#be0082 0%, #574960 100%);
-  background-attachment: fixed; }
+  background-color: #634164;
+  background-image: -webkit-linear-gradient(-230deg, #634164 -101%, #c1157f -100%, rgba(99, 65, 100, 0.6) 60%, rgba(99, 65, 100, 0.5) 100%);
+  background-image: -webkit-linear-gradient(130deg,#634164 -101%, #c1157f -100%, rgba(99, 65, 100, 0.6) 60%, rgba(99, 65, 100, 0.5) 100%);
+  background-image: linear-gradient(-40deg,#634164 -101%, #c1157f -100%, rgba(99, 65, 100, 0.6) 60%, rgba(99, 65, 100, 0.5) 100%);
+  background-attachment: fixed;
+  -webkit-filter: hue-rotate(100);
+  filter: grayscale(100%); }
   .page-about:after {
     content: "";
     display: block;
@@ -1135,9 +1137,9 @@ blockquote.alignright {
     width: 100vw;
     height: 100vh;
     z-index: -1;
-    background: url("images/hugobaeta-about.png") no-repeat center center;
+    background: url("images/bg-texture-4.png") no-repeat top left;
     background-size: cover;
-    opacity: .3; }
+    opacity: .0; }
   .page-about .entry-header {
     position: relative;
     width: 200px;
@@ -1220,7 +1222,7 @@ blockquote.alignright {
     display: block; }
   .page-about .entry-content .quote blockquote {
     opacity: .8;
-    color: #dcd264; }
+    color: #d9bd67; }
   .page-about .entry-content .quote figcaption {
     position: relative;
     padding-left: 2.727em; }
@@ -1250,10 +1252,7 @@ blockquote.alignright {
 --------------------------------------------------------------*/
 .post-type-archive-jetpack-portfolio,
 .single-jetpack-portfolio {
-  background-color: #4c515c;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover; }
+  background-attachment: fixed; }
   .post-type-archive-jetpack-portfolio .site-header a:hover,
   .post-type-archive-jetpack-portfolio a:hover,
   .post-type-archive-jetpack-portfolio a.button:hover,
@@ -1342,6 +1341,10 @@ blockquote.alignright {
   padding: 0 1em;
   background: rgba(240, 245, 240, 0.8);
   color: rgba(76, 81, 92, 0.8); }
+  .single-jetpack-portfolio .entry-content > h2, .single-jetpack-portfolio .entry-content > h3 {
+    margin: 2.25em auto 0;
+    text-align: center;
+    color: rgba(76, 81, 92, 0.8); }
   .single-jetpack-portfolio .entry-content .project-url {
     text-align: center;
     margin: 0 auto 5.0625em; }
@@ -1460,7 +1463,7 @@ blockquote.alignright {
       content: 'Previous Project'; }
 
 .jetpack-portfolio-thefivethemes {
-  background-color: #64c8be; }
+  background-color: #53abab; }
   .jetpack-portfolio-thefivethemes .project-header-content .project-title {
     text-indent: -9999px;
     position: relative;
@@ -1480,9 +1483,10 @@ blockquote.alignright {
       display: block;
       padding-top: 100%; }
   .jetpack-portfolio-thefivethemes .entry-content {
-    background: #d5f0ed; }
+    background: #f3fbfa; }
     .jetpack-portfolio-thefivethemes .entry-content .entry-description,
     .jetpack-portfolio-thefivethemes .entry-content .entry-image-description,
+    .jetpack-portfolio-thefivethemes .entry-content h2, .jetpack-portfolio-thefivethemes .entry-content h3,
     .jetpack-portfolio-thefivethemes .entry-content .entry-description h2,
     .jetpack-portfolio-thefivethemes .entry-content .entry-image-description h2 {
       color: rgba(15, 55, 95, 0.5); }
@@ -1620,7 +1624,8 @@ blockquote.alignright {
         background: #c32282; }
 
 .jetpack-portfolio-underscores-me {
-  background-color: #757D98; }
+  background-color: #757D98;
+  background-color: #6f8196; }
   .jetpack-portfolio-underscores-me .project-header-content .project-title {
     text-indent: -9999px;
     position: relative;
@@ -1917,7 +1922,7 @@ blockquote.alignright {
   text-align: center; }
   .site-footer .site-contact {
     padding: 0 0 2.25em;
-    border-bottom: 4px solid rgba(240, 245, 240, 0.15); }
+    border-bottom: 4px solid rgba(240, 245, 240, 0.05); }
     .site-footer .site-contact p {
       margin: 0; }
       .site-footer .site-contact p.small {

@@ -1,6 +1,9 @@
 .page-about {
-    @include linear-gradient(-35deg, $color__background-body-home 0%, $color__background-body-about 100%);
+    @include linear-gradient(-40deg, $color__background-body-about-alt -101%, $color__background-body-about -100%, rgba($color__background-body-about-alt,.6) 60%, rgba($color__background-body-about-alt,.5) 100%);
     background-attachment: fixed;
+
+    -webkit-filter: hue-rotate(100);
+    filter: grayscale(100%);
 
     &:after {
         content: "";
@@ -11,9 +14,10 @@
         width: 100vw;
         height: 100vh;
         z-index: -1;
-        background: url('images/hugobaeta-about.png') no-repeat center center;
+        background: url('images/bg-texture-4.png') no-repeat top left;
         background-size: cover;
-        opacity: .3;
+        
+        opacity: .0;
     }
 
 
@@ -126,7 +130,7 @@
 
         .quote blockquote {
             opacity: .8;
-            color: $color__yellow;
+            color: $color__text-blockquote-about;
         }
 
         .quote figcaption {

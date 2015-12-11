@@ -98,6 +98,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/bg-texture.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 376669,
+		"inputAbbreviatedPath": "\/images\/bg-texture.png",
+		"outputAbbreviatedPath": "\/images\/bg-texture.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/hugobaeta-about-avatar.png": {
 		"fileType": 32768,
 		"ignore": 0,
