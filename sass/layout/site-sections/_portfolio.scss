@@ -279,7 +279,7 @@ $color__portfolio_underscores-secondary: #8CC7C2;
             @include transform(translateX(-50%));
             width: 100%;
             max-width: 500px;
-            background: url('images/#{$project-logo-url}-logo.png') no-repeat center center;
+            background: url('images/project-#{$project-logo-url}-logo.png') no-repeat center center;
             background-size: 100%;
             @include animation(fadein 0.5s ease-in 1s backwards);
             &:after {

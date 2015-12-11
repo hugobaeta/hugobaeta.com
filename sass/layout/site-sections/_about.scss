@@ -2,33 +2,34 @@
     @include linear-gradient(-40deg, $color__background-body-about-alt -101%, $color__background-body-about -100%, rgba($color__background-body-about-alt,.6) 60%, rgba($color__background-body-about-alt,.5) 100%);
     background-attachment: fixed;
 
-    -webkit-filter: hue-rotate(100);
-    filter: grayscale(100%);
+    // &:after {
+    //     content: "";
+    //     display: block;
+    //     position: fixed;
+    //     top: 0;
+    //     left: 0;
+    //     width: 100vw;
+    //     height: 100vh;
+    //     z-index: -1;
+    //     background: url('images/bg-texture-4.png') no-repeat top left;
+    //     background-size: cover;
+    //     opacity: .0;
+    // }
 
-    &:after {
-        content: "";
-        display: block;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        z-index: -1;
-        background: url('images/bg-texture-4.png') no-repeat top left;
-        background-size: cover;
-        
-        opacity: .0;
+    .hentry {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        &:last-child .entry-content {
+            margin-bottom: 0;
+        }
     }
-
 
     .entry-header {
         position: relative;
         width: 200px;
         max-width: 100%;
-        background: url('images/hugobaeta-avatar.jpg') no-repeat center center;
-        background-size: cover;
-        // -webkit-filter: grayscale(100%);
-        // filter: grayscale(100%);
+        background: url('images/avatar-hugobaeta.jpg') no-repeat center center;
+        background-size: cover;       
         border-radius: 50%;
         margin: -(ms(1)) auto ms(2);
 

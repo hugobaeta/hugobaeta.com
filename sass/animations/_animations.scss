@@ -18,6 +18,16 @@
   }
 }
 
+// Fade-in animation
+@include keyframes(fadein-homeimg) {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
 // Fade-in animation for translucent images
 @include keyframes(fadein-images) {
   0% {

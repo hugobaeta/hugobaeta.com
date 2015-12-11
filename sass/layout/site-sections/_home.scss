@@ -1,5 +1,8 @@
 .home {
-    background-color: $color__background-body-home;
+    @include linear-gradient(-40deg, $color__background-body-home-alt -101%, $color__background-body-home -100%, rgba($color__background-body-home-alt,.6) 60%, rgba($color__background-body-home-alt,.5) 100%);
+    background-attachment: fixed;
+
+    //background-color: $color__background-body-home;
 
     &:after {
         content: "";
@@ -10,9 +13,10 @@
         width: 100vw;
         height: 100vh;
         z-index: -1;
-        background: url('images/hugobaeta-home-alt.jpg') no-repeat center center;
+        background: url('images/bg-home-alt.jpg') no-repeat center center;
         background-size: cover;
-        @include animation(fadein 1s ease-in backwards);
+        @include animation(fadein-homeimg 1s ease-in backwards);
+        opacity: 0.5;
     }
     
 

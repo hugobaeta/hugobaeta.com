@@ -79,6 +79,16 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     opacity: 0; }
   100% {
     opacity: 1; } }
+@-webkit-keyframes fadein-homeimg {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 0.5; } }
+@keyframes fadein-homeimg {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 0.5; } }
 @-webkit-keyframes fadein-images {
   0% {
     opacity: 0; }
@@ -666,7 +676,7 @@ a {
   a:visited {
     color: rgba(240, 245, 240, 0.8); }
   a:hover, a:focus, a:active {
-    color: #dcd264;
+    color: #f0f5f0;
     -webkit-transition-property: color, text-decoration, opacity, background;
     transition-property: color, text-decoration, opacity, background;
     -webkit-transition-duration: 0.05s;
@@ -683,7 +693,7 @@ a {
     color: rgba(240, 245, 240, 0.8); }
     a.button:hover {
       background: rgba(76, 81, 92, 0.1);
-      color: #dcd264; }
+      color: #f0f5f0; }
 
 /*--------------------------------------------------------------
 ## Sidebar Toggle Button
@@ -738,7 +748,7 @@ a {
     line-height: 1;
     text-decoration: none; }
     .main-navigation a:hover {
-      color: #dcd264; }
+      color: #f0f5f0; }
     @media (min-width: 768px) {
       .site-header .main-navigation a {
         padding: 1.212em 1em; } }
@@ -926,7 +936,7 @@ blockquote.alignright {
       color: rgba(240, 245, 240, 0.8);
       text-decoration: none; }
       .site-branding .site-title a:hover {
-        color: #dcd264; }
+        color: #f0f5f0; }
       @media (min-width: 768px) {
         .site-branding .site-title a {
           padding: 1.5em 0; } }
@@ -1076,7 +1086,11 @@ blockquote.alignright {
 ## Home
 --------------------------------------------------------------*/
 .home {
-  background-color: #be0082; }
+  background-color: #7a316b;
+  background-image: -webkit-linear-gradient(-230deg, #7a316b -101%, #c1157f -100%, rgba(122, 49, 107, 0.6) 60%, rgba(122, 49, 107, 0.5) 100%);
+  background-image: -webkit-linear-gradient(130deg,#7a316b -101%, #c1157f -100%, rgba(122, 49, 107, 0.6) 60%, rgba(122, 49, 107, 0.5) 100%);
+  background-image: linear-gradient(-40deg,#7a316b -101%, #c1157f -100%, rgba(122, 49, 107, 0.6) 60%, rgba(122, 49, 107, 0.5) 100%);
+  background-attachment: fixed; }
   .home:after {
     content: "";
     display: block;
@@ -1086,10 +1100,11 @@ blockquote.alignright {
     width: 100vw;
     height: 100vh;
     z-index: -1;
-    background: url("images/hugobaeta-home-alt.jpg") no-repeat center center;
+    background: url("images/bg-home-alt.jpg") no-repeat center center;
     background-size: cover;
-    -webkit-animation: fadein 1s ease-in backwards;
-    animation: fadein 1s ease-in backwards; }
+    -webkit-animation: fadein-homeimg 1s ease-in backwards;
+    animation: fadein-homeimg 1s ease-in backwards;
+    opacity: 0.5; }
   .home .site-content {
     position: absolute;
     top: 70vh;
@@ -1125,26 +1140,17 @@ blockquote.alignright {
   background-image: -webkit-linear-gradient(-230deg, #634164 -101%, #c1157f -100%, rgba(99, 65, 100, 0.6) 60%, rgba(99, 65, 100, 0.5) 100%);
   background-image: -webkit-linear-gradient(130deg,#634164 -101%, #c1157f -100%, rgba(99, 65, 100, 0.6) 60%, rgba(99, 65, 100, 0.5) 100%);
   background-image: linear-gradient(-40deg,#634164 -101%, #c1157f -100%, rgba(99, 65, 100, 0.6) 60%, rgba(99, 65, 100, 0.5) 100%);
-  background-attachment: fixed;
-  -webkit-filter: hue-rotate(100);
-  filter: grayscale(100%); }
-  .page-about:after {
-    content: "";
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: -1;
-    background: url("images/bg-texture-4.png") no-repeat top left;
-    background-size: cover;
-    opacity: .0; }
+  background-attachment: fixed; }
+  .page-about .hentry {
+    margin-bottom: 0;
+    padding-bottom: 0; }
+    .page-about .hentry:last-child .entry-content {
+      margin-bottom: 0; }
   .page-about .entry-header {
     position: relative;
     width: 200px;
     max-width: 100%;
-    background: url("images/hugobaeta-avatar.jpg") no-repeat center center;
+    background: url("images/avatar-hugobaeta.jpg") no-repeat center center;
     background-size: cover;
     border-radius: 50%;
     margin: -1.212em auto 1.5em; }
@@ -1474,7 +1480,7 @@ blockquote.alignright {
     transform: translateX(-50%);
     width: 100%;
     max-width: 500px;
-    background: url("images/thefivethemes-logo.png") no-repeat center center;
+    background: url("images/project-thefivethemes-logo.png") no-repeat center center;
     background-size: 100%;
     -webkit-animation: fadein 0.5s ease-in 1s backwards;
     animation: fadein 0.5s ease-in 1s backwards; }
@@ -1519,7 +1525,7 @@ blockquote.alignright {
     transform: translateX(-50%);
     width: 100%;
     max-width: 500px;
-    background: url("images/wpcom-logo.png") no-repeat center center;
+    background: url("images/project-wpcom-logo.png") no-repeat center center;
     background-size: 100%;
     -webkit-animation: fadein 0.5s ease-in 1s backwards;
     animation: fadein 0.5s ease-in 1s backwards; }
@@ -1559,7 +1565,7 @@ blockquote.alignright {
     transform: translateX(-50%);
     width: 100%;
     max-width: 500px;
-    background: url("images/orbitalis-logo.png") no-repeat center center;
+    background: url("images/project-orbitalis-logo.png") no-repeat center center;
     background-size: 100%;
     -webkit-animation: fadein 0.5s ease-in 1s backwards;
     animation: fadein 0.5s ease-in 1s backwards; }
@@ -1597,7 +1603,7 @@ blockquote.alignright {
     transform: translateX(-50%);
     width: 100%;
     max-width: 500px;
-    background: url("images/vitesseenvogue-logo.png") no-repeat center center;
+    background: url("images/project-vitesseenvogue-logo.png") no-repeat center center;
     background-size: 100%;
     -webkit-animation: fadein 0.5s ease-in 1s backwards;
     animation: fadein 0.5s ease-in 1s backwards; }
@@ -1636,7 +1642,7 @@ blockquote.alignright {
     transform: translateX(-50%);
     width: 100%;
     max-width: 500px;
-    background: url("images/underscoresme-logo.png") no-repeat center center;
+    background: url("images/project-underscoresme-logo.png") no-repeat center center;
     background-size: 100%;
     -webkit-animation: fadein 0.5s ease-in 1s backwards;
     animation: fadein 0.5s ease-in 1s backwards; }

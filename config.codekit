@@ -76,6 +76,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/avatar-hugobaeta.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 49907,
+		"inputAbbreviatedPath": "\/images\/avatar-hugobaeta.jpg",
+		"outputAbbreviatedPath": "\/images\/avatar-hugobaeta.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/avatar-mt.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -98,156 +109,90 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/bg-texture.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 376669,
-		"inputAbbreviatedPath": "\/images\/bg-texture.png",
-		"outputAbbreviatedPath": "\/images\/bg-texture.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/hugobaeta-about-avatar.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 302579,
-		"inputAbbreviatedPath": "\/images\/hugobaeta-about-avatar.png",
-		"outputAbbreviatedPath": "\/images\/hugobaeta-about-avatar.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/hugobaeta-about.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 91297,
-		"inputAbbreviatedPath": "\/images\/hugobaeta-about.png",
-		"outputAbbreviatedPath": "\/images\/hugobaeta-about.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/hugobaeta-avatar.jpg": {
+	"\/images\/bg-home-alt.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 49907,
-		"inputAbbreviatedPath": "\/images\/hugobaeta-avatar.jpg",
-		"outputAbbreviatedPath": "\/images\/hugobaeta-avatar.jpg",
+		"initialSize": 621274,
+		"inputAbbreviatedPath": "\/images\/bg-home-alt.jpg",
+		"outputAbbreviatedPath": "\/images\/bg-home-alt.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/hugobaeta-home-alt.jpg": {
+	"\/images\/bg-home.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 667641,
-		"inputAbbreviatedPath": "\/images\/hugobaeta-home-alt.jpg",
-		"outputAbbreviatedPath": "\/images\/hugobaeta-home-alt.jpg",
+		"inputAbbreviatedPath": "\/images\/bg-home.jpg",
+		"outputAbbreviatedPath": "\/images\/bg-home.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/orbitalis-feature.jpg": {
-		"fileType": 16384,
+	"\/images\/bg-lines.png": {
+		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 633157,
-		"inputAbbreviatedPath": "\/images\/orbitalis-feature.jpg",
-		"outputAbbreviatedPath": "\/images\/orbitalis-feature.jpg",
+		"initialSize": 91297,
+		"inputAbbreviatedPath": "\/images\/bg-lines.png",
+		"outputAbbreviatedPath": "\/images\/bg-lines.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/orbitalis-logo.png": {
+	"\/images\/project-orbitalis-logo.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 19773,
-		"inputAbbreviatedPath": "\/images\/orbitalis-logo.png",
-		"outputAbbreviatedPath": "\/images\/orbitalis-logo.png",
+		"inputAbbreviatedPath": "\/images\/project-orbitalis-logo.png",
+		"outputAbbreviatedPath": "\/images\/project-orbitalis-logo.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/thefivethemes-feature.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 62143,
-		"inputAbbreviatedPath": "\/images\/thefivethemes-feature.png",
-		"outputAbbreviatedPath": "\/images\/thefivethemes-feature.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/thefivethemes-logo.png": {
+	"\/images\/project-thefivethemes-logo.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 12509,
-		"inputAbbreviatedPath": "\/images\/thefivethemes-logo.png",
-		"outputAbbreviatedPath": "\/images\/thefivethemes-logo.png",
+		"inputAbbreviatedPath": "\/images\/project-thefivethemes-logo.png",
+		"outputAbbreviatedPath": "\/images\/project-thefivethemes-logo.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/underscoresme-logo.png": {
+	"\/images\/project-underscoresme-logo.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 7649,
-		"inputAbbreviatedPath": "\/images\/underscoresme-logo.png",
-		"outputAbbreviatedPath": "\/images\/underscoresme-logo.png",
+		"inputAbbreviatedPath": "\/images\/project-underscoresme-logo.png",
+		"outputAbbreviatedPath": "\/images\/project-underscoresme-logo.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/vitesseenvogue-feature.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 72646,
-		"inputAbbreviatedPath": "\/images\/vitesseenvogue-feature.png",
-		"outputAbbreviatedPath": "\/images\/vitesseenvogue-feature.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/vitesseenvogue-logo.png": {
+	"\/images\/project-vitesseenvogue-logo.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 9038,
-		"inputAbbreviatedPath": "\/images\/vitesseenvogue-logo.png",
-		"outputAbbreviatedPath": "\/images\/vitesseenvogue-logo.png",
+		"inputAbbreviatedPath": "\/images\/project-vitesseenvogue-logo.png",
+		"outputAbbreviatedPath": "\/images\/project-vitesseenvogue-logo.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/wordpresscom-feature.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 19042,
-		"inputAbbreviatedPath": "\/images\/wordpresscom-feature.png",
-		"outputAbbreviatedPath": "\/images\/wordpresscom-feature.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/wpcom-logo.png": {
+	"\/images\/project-wpcom-logo.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 7913,
-		"inputAbbreviatedPath": "\/images\/wpcom-logo.png",
-		"outputAbbreviatedPath": "\/images\/wpcom-logo.png",
+		"inputAbbreviatedPath": "\/images\/project-wpcom-logo.png",
+		"outputAbbreviatedPath": "\/images\/project-wpcom-logo.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

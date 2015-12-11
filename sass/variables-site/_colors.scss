@@ -52,11 +52,12 @@ $color__highlight-mix60: mix($color__base, $color__highlight-tint20, 60%);
 // Backgrounds
 
 $color__background-body: $color__gray;
-$color__background-body-home: $color__magenta;
+$color__background-body-home: mix($color__yellow, $color__magenta,10%);
+$color__background-body-home-alt: mix($color__gray, $color__magenta,60%);;
 $color__background-body-portfolio: $color__gray;
-$color__background-body-portfolio-alt: mix($color__gray, $color__magenta,90%);;
+$color__background-body-portfolio-alt: mix($color__gray, $color__magenta,90%);
 $color__background-body-about: mix($color__yellow, $color__magenta,10%);
-$color__background-body-about-alt: mix($color__gray, $color__magenta,80%);;
+$color__background-body-about-alt: mix($color__gray, $color__magenta,80%);
 
 $color__background-404: mix($color__magenta, $color__yellow,80%);
 $color__background-404-alt: mix($color__magenta, $color__yellow,50%);
@@ -102,14 +103,14 @@ $color__text-portfolio-description: rgba($color__background-body-portfolio,.8);
 
 $color__link: rgba($color__offwhite,.8);
 $color__link-visited: rgba($color__offwhite,.8);
-$color__link-hover: $color__highlight;
+$color__link-hover: $color__offwhite;
 
 $color__link-button: rgba($color__gray,.2);
 $color__link-button-hover: rgba($color__gray,.1);
 
 $color__link-header: rgba($color__offwhite,.8);
 $color__link-header-nav: rgba($color__offwhite,.6);
-$color__link-header-hover: $color__highlight;
+$color__link-header-hover: $color__offwhite;
 
 $color__link-secondary-hover: rgba($color__base,.8);
 
