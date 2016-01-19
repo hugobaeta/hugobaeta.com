@@ -76,6 +76,19 @@ endif; // hugobaeta_setup
 add_action( 'after_setup_theme', 'hugobaeta_setup' );
 
 /**
+ * Fix Responsive images in WordPress 4.4
+ */
+function filter_max_srcset_image_width( $max_width ) {
+    return 1;
+}
+add_filter( 'max_srcset_image_width', 'filter_max_srcset_image_width' );
+
+function remove_max_srcset_image_width( $max_width ) {
+    return false;
+}
+add_filter( 'max_srcset_image_width', 'remove_max_srcset_image_width' );
+
+/**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *
  * Priority 0 to make it available to lower priority callbacks.
