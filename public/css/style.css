@@ -118,6 +118,9 @@ h1 {
 .content {
   font-size: var(--fs-large)
 }
+.intro {
+  text-wrap: pretty;
+}
 .links {
   font-size: var(--fs-medium);
   color: var(--color-text-secondary);
